@@ -10,5 +10,5 @@
     <span class="accent bold">Izaak Kuipers</span>.
   </h1>
   <p class="subtitle">And this place is all about me</p>
-  <button class="material-icons-round continue"> keyboard_arrow_down </button>
+  <button class="material-icons-round continue"> arrow_forward </button>
 </div>

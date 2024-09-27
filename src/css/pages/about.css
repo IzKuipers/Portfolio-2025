@@ -11,6 +11,7 @@ div.page.about > * {
 
 div.page.about a.projects {
   display: block;
+  width: fit-content;
 }
 
 div.page.about > p {

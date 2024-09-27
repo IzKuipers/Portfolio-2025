@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html,
 body,
 main {
@@ -62,12 +66,15 @@ a {
 @media screen and (max-width: 600px) {
   body::before {
     background-size: 10vw 10vw;
+    background-image: radial-gradient(var(--fg) 1.5px, transparent 0);
   }
 }
 
 @media screen and (max-width: 300px) {
   body::before {
     background-size: 20vw 20vw;
+    background-image: radial-gradient(var(--fg) 1px, transparent 0);
+    position-anchor: 0.1;
   }
 }
 
