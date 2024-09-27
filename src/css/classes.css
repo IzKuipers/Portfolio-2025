@@ -1,0 +1,16 @@
+.bold {
+  font-weight: bold;
+}
+
+.accent,
+.accent-fg {
+  color: var(--accent);
+}
+
+.accent-bg {
+  background-color: var(--accent);
+}
+
+.grayed {
+  opacity: 0.5;
+}

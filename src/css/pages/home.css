@@ -1,0 +1,38 @@
+div.page.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.page.home h1 {
+  font-size: var(--hero-header);
+  font-weight: normal;
+  text-align: center;
+}
+
+div.page.home p.subtitle {
+  opacity: 0.5;
+  font-size: var(--small-header);
+  text-align: center;
+}
+
+div.page.home button.continue {
+  position: absolute;
+  bottom: 40px;
+  font-size: 48px;
+  border: none;
+  background-color: transparent;
+  color: var(--grayed);
+}
+
+div.page.home div.forced-break {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  div.page.home div.forced-break {
+    display: block;
+  }
+}

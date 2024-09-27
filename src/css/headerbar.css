@@ -1,0 +1,57 @@
+header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 72px;
+  background-color: var(--bg);
+}
+
+header div.desktop-nav-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+nav.desktop-nav {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  pointer-events: initial;
+}
+
+nav.desktop-nav a {
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  height: fit-content;
+}
+
+nav.desktop-nav a.active {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+header button.sidebar-toggle {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: var(--fg);
+  font-size: 24px;
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  header div.desktop-nav-wrapper {
+    display: none;
+  }
+
+  header button.sidebar-toggle {
+    display: block;
+  }
+}
