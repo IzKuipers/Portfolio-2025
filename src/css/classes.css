@@ -11,6 +11,14 @@
   background-color: var(--accent);
 }
 
+.accent-hover:hover {
+  background-color: var(--accent);
+}
+
+.accent-hover-fill:hover {
+  fill: var(--accent);
+}
+
 .grayed {
   opacity: 0.5;
 }

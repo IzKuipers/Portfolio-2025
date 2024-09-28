@@ -17,7 +17,7 @@
   </h1>
   <p class="subtitle">
     <ProgressiveWriter
-      text={["And this place is all about me"]}
+      text={["And this place is all ", { href: "/about", text: "about me" }]}
       speed={50}
       delay={3000}
     />

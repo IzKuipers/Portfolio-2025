@@ -1,0 +1,93 @@
+div.page.projects h1 {
+  font-size: var(--large-header);
+  color: var(--accent);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+div.page.projects div.project:last-child {
+  border-bottom: none;
+}
+
+div.page.projects div.project {
+  padding: 20px 30px;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 660px;
+  border-bottom: var(--grayed) 1px solid;
+}
+
+div.page.projects div.project h3 {
+  gap: 15px;
+  font-size: var(--small-header);
+  margin-bottom: 10px;
+}
+
+div.page.projects div.project h3 span.name {
+  color: var(--accent);
+}
+
+div.page.projects div.project h3 > div,
+div.page.projects div.project h3 {
+  display: flex;
+  align-items: center;
+}
+div.page.projects div.project h3 div.links {
+  gap: 10px;
+}
+
+div.page.projects div.project h3 div.links a {
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+div.page.projects div.project h3 div.right {
+  margin-left: Auto;
+  gap: 20px;
+  font-family: "Fira Mono";
+}
+
+div.page.projects div.project h3 div.date {
+  font-size: var(--normal-text-size);
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+div.page.projects div.project h3 div.discontinued {
+  background-color: var(--red);
+  color: var(--bg);
+  height: 24px;
+  border-radius: 12px;
+  font-size: var(--small-text-size);
+  line-height: 24px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+  div.page.projects h1 {
+    text-align: left;
+    margin: 10px 0;
+  }
+
+  div.page.projects div.project {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  div.page.projects div.project h3 div.discontinued {
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    padding: 0;
+    color: transparent;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div.page.projects div.project div.right {
+    display: none;
+  }
+}

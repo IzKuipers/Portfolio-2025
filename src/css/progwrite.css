@@ -9,6 +9,10 @@ span.progressive-writer * {
   vertical-align: middle;
 }
 
+span.progressive-writer .link {
+  cursor: pointer;
+}
+
 span.progressive-writer.blinker:has(span)::after {
   content: "#";
   overflow: hidden;

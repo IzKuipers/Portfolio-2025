@@ -38,8 +38,9 @@ export class ProgressiveWriter {
         }`;
 
         if (data.href) {
-          wrapper.addEventListener("click", (e) => {
-            window.open(data.href, "_blank");
+          wrapper.classList.add("link");
+          wrapper.addEventListener("click", () => {
+            location.href = data.href || "";
           });
         }
 

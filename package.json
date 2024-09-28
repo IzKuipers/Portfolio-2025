@@ -20,6 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-node": "^5.2.5"
+		"@sveltejs/adapter-node": "^5.2.5",
+		"dayjs": "^1.11.13"
 	}
 }
