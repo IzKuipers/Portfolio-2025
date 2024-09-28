@@ -21,6 +21,7 @@ div.page.about > p {
 div.page.about > h2 {
   font-size: var(--medium-header);
   margin-bottom: 20px;
+  color: var(--accent);
 }
 
 div.page.about div.skills {

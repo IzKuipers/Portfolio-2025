@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -6,9 +7,23 @@
 
 <div class="page home">
   <h1>
-    Hi! I'm <div class="forced-break" />
-    <span class="accent bold">Izaak Kuipers</span>.
+    <ProgressiveWriter
+      text={[
+        "Hi!$ I'm ",
+        { text: "Izaak Kuipers", className: "accent bold" },
+        ".",
+      ]}
+      blinker
+      delay={500}
+    />
+    <noscript>Hi! I'm <span class="bold accent">Izaak Kuipers</span>.</noscript>
   </h1>
-  <p class="subtitle">And this place is all about me</p>
-  <button class="material-icons-round continue"> arrow_forward </button>
+  <p class="subtitle">
+    <ProgressiveWriter
+      text={["And this place is all about me"]}
+      speed={50}
+      delay={3000}
+    />
+    <noscript>And this place is all about me</noscript>
+  </p>
 </div>

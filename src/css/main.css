@@ -4,6 +4,7 @@
 @import url("./classes.css");
 @import url("./pages.css");
 @import url("./headerbar.css");
+@import url("./progwrite.css");
 
 * {
   box-sizing: border-box;
