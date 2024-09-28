@@ -1,5 +1,5 @@
-import { Sleep } from "../sleep";
 import type { TypeNode } from "../../types/writer";
+import { Sleep } from "../sleep";
 
 export class ProgressiveWriter {
   target: HTMLSpanElement;

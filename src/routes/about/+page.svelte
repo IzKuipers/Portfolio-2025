@@ -1,9 +1,3 @@
-<script lang="ts">
-  import type { PageData } from "./$types";
-
-  export let data: PageData;
-</script>
-
 <div class="page about">
   <p>
     Hi! I’m Izaak, a 17 year-old fullstack enthusiast developer from the

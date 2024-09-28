@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import type { TypeNode } from "../types/writer";
-  import { ProgressiveWriter } from "../ts/writer";
   import { Sleep } from "../ts/sleep";
+  import { ProgressiveWriter } from "../ts/writer";
+  import type { TypeNode } from "../types/writer";
 
   export let delay = 0;
   export let speed = 100;
