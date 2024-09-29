@@ -1,12 +1,17 @@
 <script lang="ts">
+  import { navigating } from "$app/stores";
   import type { ReadableStore } from "../types/writable";
   import Logo from "./HeaderBar/Logo.svelte";
   import Navigation from "./HeaderBar/Navigation.svelte";
 
   export let sidebarOpened: ReadableStore<boolean>;
+
+  navigating.subscribe((v) => {
+    $sidebarOpened = false;
+  });
 </script>
 
-<header>
+<header class:nav-opened={$sidebarOpened}>
   <Logo />
   <div class="desktop-nav-wrapper">
     <Navigation className="desktop-nav" />
@@ -16,4 +21,7 @@
     on:click={() => ($sidebarOpened = !$sidebarOpened)}
     >{$sidebarOpened ? "close" : "menu"}</button
   >
+  <div class="mobile-nav-wrapper" class:show={$sidebarOpened}>
+    <Navigation className="mobile-nav" />
+  </div>
 </header>

@@ -21,4 +21,6 @@
 
 .grayed {
   opacity: 0.5;
+  z-index: -1 !important;
+  position: relative;
 }

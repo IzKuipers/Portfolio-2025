@@ -61,6 +61,10 @@ header button.sidebar-toggle {
   display: none;
 }
 
+header div.mobile-nav-wrapper {
+  display: none;
+}
+
 @media screen and (max-width: 750px) {
   header div.desktop-nav-wrapper {
     display: none;
@@ -68,5 +72,47 @@ header button.sidebar-toggle {
 
   header button.sidebar-toggle {
     display: block;
+  }
+
+  header.nav-opened * {
+    color: var(--fg) !important;
+  }
+
+  header.nav-opened > svg {
+    --accent: var(--fg) !important;
+    --grayed: var(--fg) !important;
+  }
+
+  header svg,
+  header button.sidebar-toggle {
+    z-index: 1000000;
+  }
+  header div.mobile-nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 100% 0;
+    pointer-events: none;
+    transition: translate 0.3s, opacity 0.3s;
+    z-index: 100000;
+  }
+
+  header div.mobile-nav-wrapper.show {
+    translate: 0 0;
+    pointer-events: initial;
+  }
+
+  header div.mobile-nav-wrapper a {
+    color: var(--bg);
+    display: block;
+    font-size: var(--hero-header);
+    text-align: center;
+    margin-bottom: 20px;
   }
 }

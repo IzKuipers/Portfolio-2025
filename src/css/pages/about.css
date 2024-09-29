@@ -37,10 +37,14 @@ div.page.about div.skills div.skill h5 {
   line-height: 30px;
   font-size: var(--medium-text-size);
   opacity: 0.5;
+  position: relative;
+  z-index: -1 !important;
 }
 
 div.page.about div.skills p.disclaimer {
   opacity: 0.5;
+  z-index: -1 !important;
+  position: relative;
   margin-top: 30px;
 }
 
