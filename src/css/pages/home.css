@@ -4,12 +4,44 @@ div.page.home {
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+div.page.home * {
+  pointer-events: initial;
 }
 
 div.page.home h1 {
   font-size: var(--hero-header);
   font-weight: normal;
   text-align: center;
+}
+
+div.page.home .word-wrapper.accent {
+  text-shadow: 0 0 0.5em currentColor;
+}
+
+div.page.home .word-wrapper {
+  transition: text-shadow 0.3s, filter 0.3s;
+}
+
+div.page.home .word-wrapper:hover {
+  filter: brightness(1.4);
+}
+
+@media screen and (prefers-color-scheme: light) {
+  div.page.home .word-wrapper.accent {
+    text-shadow: 0 0 0.6em currentColor;
+  }
+
+  div.page.home .word-wrapper:hover {
+    filter: brightness(1.2);
+  }
 }
 
 div.page.home p.subtitle {
