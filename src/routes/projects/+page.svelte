@@ -1,10 +1,14 @@
 <script>
   import dayjs from "dayjs";
   import { Projects } from "../../ts/stores/projects";
+  import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
 </script>
 
 <div class="page projects">
-  <h1>Projects</h1>
+  <h1>
+    <ProgressiveWriter text={["Projects"]} speed={40} delay={300} />
+    <noscript>Projects</noscript>
+  </h1>
   <div class="projects">
     {#each Projects as { name, htmlUrl, codeUrl, description, date, discontinued }}
       <div class="project">

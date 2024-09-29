@@ -1,3 +1,23 @@
+div.page.projects::after {
+  content: "Temporary Design";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  rotate: 45deg;
+  font-size: 10vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 1000;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0.1;
+  font-family: "Space Mono";
+}
+
 div.page.projects h1 {
   font-size: var(--large-header);
   color: var(--accent);

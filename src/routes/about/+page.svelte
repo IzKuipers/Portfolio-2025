@@ -1,3 +1,7 @@
+<script>
+  import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
+</script>
+
 <div class="page about">
   <p>
     Hi! I’m Izaak, a 17 year-old fullstack enthusiast developer from the
@@ -9,7 +13,10 @@
     >.
   </p>
 
-  <h2>My History</h2>
+  <h2>
+    <ProgressiveWriter text={["My history"]} speed={40} delay={300} />
+    <noscript>My history</noscript>
+  </h2>
 
   <p>
     I’ve been interested in IT from a very young age. I started experimenting
@@ -20,7 +27,10 @@
     embedded applications.
   </p>
 
-  <h2>Skills I've mastered</h2>
+  <h2>
+    <ProgressiveWriter text={["Skills I've mastered"]} speed={40} delay={300} />
+    <noscript>Skills I've mastered</noscript>
+  </h2>
 
   <div class="skills">
     <div class="skill">
@@ -44,7 +54,14 @@
     </p>
   </div>
 
-  <h2>Notable projects I've worked on</h2>
+  <h2>
+    <ProgressiveWriter
+      text={["Notable projects I've worked on"]}
+      speed={40}
+      delay={300}
+    />
+    <noscript>Notable projects I've worked on</noscript>
+  </h2>
 
   <p>
     I’ve worked on a lot of projects over the years, some would say even <b

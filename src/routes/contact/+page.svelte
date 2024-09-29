@@ -1,9 +1,13 @@
 <script>
+  import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import SectionHeader from "./SectionHeader.svelte";
 </script>
 
 <div class="page contact">
-  <h1>Contact Me</h1>
+  <h1>
+    <ProgressiveWriter text={["Contact Me"]} speed={40} delay={300} />
+    <noscript>Contact Me</noscript>
+  </h1>
   <div class="contact-panes">
     <div class="pane links">
       <section>
