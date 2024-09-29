@@ -1,0 +1,61 @@
+div.page.contact h1 {
+  font-size: var(--large-header);
+  color: var(--accent);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+div.page.contact div.contact-panes {
+  width: 100vw;
+  max-width: 860px;
+  display: flex;
+  margin: 0 auto;
+}
+
+div.page.contact div.contact-panes > div.pane {
+  padding: 30px;
+  width: 50%;
+  min-width: 50%;
+}
+
+div.page.contact div.contact-panes section:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+div.page.contact div.contact-panes section h3 {
+  font-size: var(--small-header);
+  color: var(--accent);
+}
+
+div.page.contact div.contact-panes section a {
+  color: var(--fg);
+}
+
+div.page.contact div.contact-panes div.links {
+  border-right: var(--grayed) 1px solid;
+}
+
+div.page.contact div.contact-panes div.links * {
+  text-align: right;
+}
+div.page.contact div.contact-panes a.contact-direct {
+  display: block;
+  height: 40px;
+  padding: 0 20px;
+  width: fit-content;
+  line-height: 40px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: var(--accent);
+  color: var(--bg);
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  div.page.contact h1 {
+    text-align: left;
+    margin: 10px 0;
+  }
+}
