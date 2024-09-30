@@ -2,10 +2,14 @@
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
 </script>
 
+<svelte:head>
+  <title>Thank You :D - Izaak Kuipers</title>
+</svelte:head>
+
 <div class="page home">
   <h1>
     <ProgressiveWriter text={["Thank you!"]} blinker speed={40} />
-    <noscript>Hi! I'm <span class="bold accent">Izaak Kuipers</span>.</noscript>
+    <noscript>Thank you!</noscript>
   </h1>
   <p class="subtitle">
     <ProgressiveWriter

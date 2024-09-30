@@ -3,6 +3,10 @@
   import SectionHeader from "./SectionHeader.svelte";
 </script>
 
+<svelte:head>
+  <title>Contact Me - Izaak Kuipers</title>
+</svelte:head>
+
 <div class="page contact">
   <h1>
     <ProgressiveWriter text={["Contact Me"]} speed={40} delay={300} />

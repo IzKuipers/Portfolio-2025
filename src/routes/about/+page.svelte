@@ -2,6 +2,10 @@
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
 </script>
 
+<svelte:head>
+  <title>About Me - Izaak Kuipers</title>
+</svelte:head>
+
 <div class="page about">
   <p>
     Hi! I’m Izaak, a 17 year-old fullstack enthusiast developer from the

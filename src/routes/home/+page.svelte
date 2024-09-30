@@ -2,6 +2,10 @@
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
 </script>
 
+<svelte:head>
+  <title>Home - Izaak Kuipers</title>
+</svelte:head>
+
 <div class="page home">
   <h1>
     <ProgressiveWriter

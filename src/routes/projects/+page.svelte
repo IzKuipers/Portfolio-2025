@@ -26,6 +26,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>Projects - Izaak Kuipers</title>
+</svelte:head>
+
 <div class="page projects">
   <div class="carousel-wrapper">
     <button class="navigate material-icons-round" on:click={previous}>
