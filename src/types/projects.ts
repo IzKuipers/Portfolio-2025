@@ -5,4 +5,6 @@ export interface Project {
   htmlUrl?: string;
   codeUrl?: string;
   discontinued?: boolean;
+  longDescription: string;
+  image: string;
 }

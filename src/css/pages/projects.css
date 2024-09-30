@@ -1,96 +1,116 @@
-div.page.projects h1 {
-  font-size: var(--large-header);
-  color: var(--accent);
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-div.page.projects div.project:last-child {
-  border-bottom: none;
-}
-
-div.page.projects div.project {
-  padding: 20px 30px;
-  margin: 0 auto;
-  width: 100vw;
-  max-width: 660px;
-  border-bottom: var(--grayed) 1px solid;
-  z-index: -1;
-}
-
-div.page.projects div.project h3 {
-  gap: 15px;
-  font-size: var(--small-header);
-  margin-bottom: 10px;
-}
-
-div.page.projects div.project h3 span.name {
-  color: var(--accent);
-}
-
-div.page.projects div.project h3 > div,
-div.page.projects div.project h3 {
-  display: flex;
-  align-items: center;
-}
-div.page.projects div.project h3 div.links {
-  gap: 10px;
-}
-
-div.page.projects div.project h3 div.links a {
-  color: var(--fg);
-  text-decoration: none;
-  font-size: 16px;
-}
-
-div.page.projects div.project h3 div.right {
-  margin-left: Auto;
-  gap: 20px;
-  font-family: "Fira Mono";
-}
-
-div.page.projects div.project h3 div.date {
-  font-size: var(--normal-text-size);
-  font-weight: normal;
-  opacity: 0.5;
+div.page.projects div.carousel-wrapper {
+  width: 100%;
+  max-width: 700px;
+  /* margin: 0 auto; */
+  aspect-ratio: 16/9;
+  overflow: hidden;
   position: relative;
-  z-index: -1;
+  border-radius: 15px;
+  border: var(--grayed) 3px solid;
+  margin: 30px auto;
+  margin-bottom: 60px;
 }
 
-div.page.projects div.project h3 div.discontinued {
-  background-color: var(--red);
+div.page.projects div.carousel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: visible;
+  translate: calc(100% * var(--page) - calc(100% * var(--page) * 2)) 0;
+  transition: translate 0.3s;
+}
+
+div.page.projects div.carousel-wrapper button.navigate {
+  position: absolute;
+  /* top: 50%; */
+  left: 0;
+  width: 80px;
+  height: calc(50% + 12.5px);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  /* border-radius: 50%; */
+  border: none;
+  color: var(--fg);
+  z-index: 10;
+  background-color: transparent;
+  font-size: 24px;
+  outline: none;
+}
+
+div.page.projects div.carousel-wrapper div.links {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+  min-width: fit-content;
+}
+
+div.page.projects div.carousel-wrapper a.material-icons-round {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: var(--accent);
   color: var(--bg);
-  height: 24px;
-  border-radius: 12px;
-  font-size: var(--small-text-size);
-  line-height: 24px;
-  padding: 0 10px;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 700px) {
-  div.page.projects h1 {
-    text-align: left;
-    margin: 10px 0;
-  }
+div.page.projects div.carousel-wrapper button.navigate + button.navigate {
+  left: unset;
+  right: 0;
+}
 
-  div.page.projects div.project {
-    width: 100%;
-    padding: 20px 0;
-  }
+div.page.projects div.carousel div.project {
+  background-image: var(--background);
 
-  div.page.projects div.project h3 div.discontinued {
-    width: 10px;
-    height: 10px;
-    overflow: hidden;
-    padding: 0;
-    color: transparent;
-    border-radius: 5px;
+  background: linear-gradient(to right, #0009 0%, #0009 100%), var(--background);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: end;
+  padding: 30px;
+  gap: 30px;
+}
+
+@media screen and (prefers-color-scheme: light) {
+  div.page.projects div.carousel-wrapper * {
+    --fg: var(--bg) !important;
+    color: var(--fg);
   }
 }
 
-@media screen and (max-width: 400px) {
-  div.page.projects div.project div.right {
-    display: none;
-  }
+div.page.projects div.carousel div.project h1 {
+  font-size: var(--medium-header);
+}
+
+div.page.projects div.carousel div.project p.date {
+  opacity: 0.5;
+  margin-top: 15px;
+}
+
+div.page.projects div.carousel div.project > * {
+  z-index: 2000;
+  position: relative;
+}
+
+div.page.projects div.descriptions {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  min-height: fit-content;
+  line-height: 30px;
+}
+
+div.page.projects div.descriptions p.more {
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
