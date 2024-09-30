@@ -42,6 +42,15 @@ div.page.projects div.carousel-wrapper button.navigate {
   background-color: transparent;
   font-size: 24px;
   outline: none;
+  transition: transform 250ms;
+}
+
+div.page.projects div.carousel-wrapper button.navigate:hover:not(:active) {
+  transform: rotate(360deg);
+}
+
+div.page.projects div.carousel-wrapper button.navigate:active {
+  transform: translate(5px, -5px) rotate(-45deg);
 }
 
 div.page.projects div.carousel-wrapper div.links {
@@ -62,11 +71,28 @@ div.page.projects div.carousel-wrapper a.material-icons-round {
   align-items: center;
   text-decoration: none;
   border-radius: 5px;
+  transition: rotate 0.3s, scale 0.3s, filter 0.3s;
+}
+
+div.page.projects div.carousel-wrapper a.material-icons-round:hover {
+  filter: brightness(1.2);
+  scale: 1.15;
+  rotate: 6deg;
+}
+
+div.page.projects div.carousel-wrapper a.material-icons-round:active {
+  scale: 0.95;
+  rotate: -6deg;
+  filter: brightness(0.9);
 }
 
 div.page.projects div.carousel-wrapper button.navigate + button.navigate {
   left: unset;
   right: 0;
+}
+
+div.page.projects div.carousel-wrapper button.navigate:first-child:active {
+  transform: translate(-5px, -5px) rotate(45deg) !important;
 }
 
 div.page.projects div.carousel div.project {
@@ -87,15 +113,15 @@ div.page.projects div.carousel div.project {
 }
 
 @media screen and (prefers-color-scheme: light) {
-  div.page.projects div.carousel-wrapper * {
-    --fg: var(--bg) !important;
+  div.page.projects div.carousel-wrapper > * {
+    --fg: var(--bg);
     color: var(--fg);
   }
 }
 
-div.page.projects div.carousel div.project h1 {
+div.page.projects > div.carousel-wrapper > div.carousel > div.project h1 {
   font-size: var(--medium-header);
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 div.page.projects div.carousel div.project p.date {
@@ -125,14 +151,28 @@ div.page.projects div.descriptions p.more {
 @media screen and (max-width: 800px) {
   div.page.projects div.carousel-wrapper {
     margin: 0;
-    /* border-radius: 0; */
-    border: var(--grayed) 2px solid;
+    border-radius: 0;
+    border: none;
+    border-top: var(--grayed) 2px solid;
+    border-bottom: var(--grayed) 2px solid;
     max-height: 60%;
     aspect-ratio: 1/1;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    max-width: unset;
   }
 
   div.page.projects div.carousel-wrapper div.links {
     display: none;
+  }
+
+  div.page.projects {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    /* padding-top: 72px; */
+  }
+
+  div.page.projects div.descriptions {
+    padding: 20px;
   }
 }
