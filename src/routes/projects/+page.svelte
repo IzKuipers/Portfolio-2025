@@ -39,11 +39,45 @@
         <div class="project" style="--background: url({image});">
           <!-- <div class="content"> -->
           <div class="info">
-            <h1>{name}</h1>
+            <h1>
+              {#if index === i}
+                <ProgressiveWriter
+                  text={[name]}
+                  speed={40}
+                  delay={300}
+                  blinker
+                />
+                <noscript>{name}</noscript>
+              {:else}
+                &nbsp;
+              {/if}
+            </h1>
             <p class="description">
-              {description}
+              {#if index === i}
+                <ProgressiveWriter
+                  text={[description]}
+                  speed={20}
+                  delay={300}
+                />
+                <noscript>{description}</noscript>
+              {:else}
+                &nbsp;
+              {/if}
             </p>
-            <p class="date">{dayjs(date).format("MMMM YYYY")}</p>
+            <p class="date">
+              {#if index === i}
+                <ProgressiveWriter
+                  text={[dayjs(date).format("MMMM YYYY")]}
+                  delay={500}
+                  speed={30}
+                />
+                <noscript>
+                  {dayjs(date).format("MMMM YYYY")}
+                </noscript>
+              {:else}
+                &nbsp;
+              {/if}
+            </p>
           </div>
           {#if htmlUrl || codeUrl}
             <div class="links">
@@ -61,10 +95,24 @@
     </div>
   </div>
   <div class="descriptions">
-    {#each Projects as { longDescription }, i}
+    {#each Projects as { longDescription, htmlUrl, codeUrl }, i}
       {#if index === i}
         <div class="project">
-          {@html longDescription}
+          <p>
+            {@html longDescription}
+          </p>
+          {#if htmlUrl || codeUrl}
+            <p class="links">
+              <br />
+              {#if htmlUrl}
+                <a href={htmlUrl}>Website</a>
+              {/if}
+              {#if codeUrl}
+                {#if htmlUrl}|{/if}
+                <a href={codeUrl}>View Code</a>
+              {/if}
+            </p>
+          {/if}
         </div>
       {/if}
     {/each}

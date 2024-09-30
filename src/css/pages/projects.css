@@ -1,3 +1,8 @@
+div.page.projects {
+  z-index: -1;
+  position: relative;
+}
+
 div.page.projects div.carousel-wrapper {
   width: 100%;
   max-width: 700px;
@@ -9,6 +14,7 @@ div.page.projects div.carousel-wrapper {
   border: var(--grayed) 3px solid;
   margin: 30px auto;
   margin-bottom: 60px;
+  z-index: 0;
 }
 
 div.page.projects div.carousel {
@@ -25,9 +31,9 @@ div.page.projects div.carousel-wrapper button.navigate {
   /* top: 50%; */
   left: 0;
   width: 80px;
-  height: calc(50% + 12.5px);
+  height: 80px;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   /* border-radius: 50%; */
   border: none;
@@ -89,6 +95,7 @@ div.page.projects div.carousel div.project {
 
 div.page.projects div.carousel div.project h1 {
   font-size: var(--medium-header);
+  color: var(--accent);
 }
 
 div.page.projects div.carousel div.project p.date {
@@ -113,4 +120,19 @@ div.page.projects div.descriptions {
 div.page.projects div.descriptions p.more {
   margin-top: 30px;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  div.page.projects div.carousel-wrapper {
+    margin: 0;
+    /* border-radius: 0; */
+    border: var(--grayed) 2px solid;
+    max-height: 60%;
+    aspect-ratio: 1/1;
+    margin-bottom: 30px;
+  }
+
+  div.page.projects div.carousel-wrapper div.links {
+    display: none;
+  }
 }
