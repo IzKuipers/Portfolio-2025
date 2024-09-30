@@ -5,6 +5,7 @@ header {
   top: 0;
   height: 72px;
   background-color: var(--bg);
+  z-index: 200000;
 }
 
 header > svg {
@@ -61,11 +62,14 @@ header button.sidebar-toggle {
   display: none;
 }
 
-header div.mobile-nav-wrapper {
+div.mobile-nav-wrapper {
   display: none;
 }
 
 @media screen and (max-width: 750px) {
+  header {
+    background-color: transparent;
+  }
   header div.desktop-nav-wrapper {
     display: none;
   }
@@ -87,7 +91,7 @@ header div.mobile-nav-wrapper {
   header button.sidebar-toggle {
     z-index: 1000000;
   }
-  header div.mobile-nav-wrapper {
+  div.mobile-nav-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -103,12 +107,12 @@ header div.mobile-nav-wrapper {
     z-index: 100000;
   }
 
-  header div.mobile-nav-wrapper.show {
+  div.mobile-nav-wrapper.show {
     translate: 0 0;
     pointer-events: initial;
   }
 
-  header div.mobile-nav-wrapper a {
+  div.mobile-nav-wrapper a {
     color: var(--bg);
     display: block;
     font-size: var(--hero-header);

@@ -21,7 +21,7 @@
     on:click={() => ($sidebarOpened = !$sidebarOpened)}
     >{$sidebarOpened ? "close" : "menu"}</button
   >
-  <div class="mobile-nav-wrapper" class:show={$sidebarOpened}>
-    <Navigation className="mobile-nav" />
-  </div>
 </header>
+<div class="mobile-nav-wrapper" class:show={$sidebarOpened}>
+  <Navigation className="mobile-nav" />
+</div>
