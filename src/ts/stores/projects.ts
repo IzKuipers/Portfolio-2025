@@ -1,10 +1,10 @@
-import type { Project } from "../../types/projects";
 import ArcOS from "../../assets/arcos.png";
 import CanvasScript from "../../assets/canvasscript.png";
 import Donut from "../../assets/donut.png";
 import Inepta from "../../assets/inepta.png";
 import InsType from "../../assets/instype.png";
 import Sacruda from "../../assets/sacruda.png";
+import type { Project } from "../../types/projects";
 
 export const Projects: Project[] = [
   {

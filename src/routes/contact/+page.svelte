@@ -1,5 +1,4 @@
 <script>
-  import { page } from "$app/stores";
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import SectionHeader from "./SectionHeader.svelte";
 </script>

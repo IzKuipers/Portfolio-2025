@@ -1,6 +1,6 @@
 import { error, redirect } from "@sveltejs/kit";
-import type { RequestHandler } from "./$types";
 import { sendMessage } from "../../../ts/mailer";
+import type { RequestHandler } from "./$types";
 
 export const GET: RequestHandler = async () => {
   return new Response();

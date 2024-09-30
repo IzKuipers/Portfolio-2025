@@ -1,7 +1,7 @@
 <script>
+  import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import dayjs from "dayjs";
   import { Projects } from "../../ts/stores/projects";
-  import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
 
   let index = 0;
 
