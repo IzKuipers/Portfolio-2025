@@ -40,6 +40,7 @@ nav.desktop-nav a {
   color: var(--fg);
   display: block;
   height: fit-content;
+  transition: scale 0.2s, color 0.2s;
 }
 
 nav.desktop-nav a:hover {
