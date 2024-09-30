@@ -21,6 +21,8 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-node": "^5.2.5",
-		"dayjs": "^1.11.13"
+		"@types/nodemailer": "^6.4.16",
+		"dayjs": "^1.11.13",
+		"nodemailer": "^6.9.15"
 	}
 }
