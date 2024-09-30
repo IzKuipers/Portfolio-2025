@@ -11,6 +11,7 @@ div.page.contact div.contact-panes {
   max-width: 860px;
   display: flex;
   margin: 0 auto;
+  border-bottom: var(--grayed) 1px solid;
 }
 
 div.page.contact div.contact-panes > div.pane {
@@ -53,6 +54,55 @@ div.page.contact div.contact-panes a.contact-direct {
   margin-top: 30px;
 }
 
+div.page.contact div.direct {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+div.page.contact div.direct p {
+  margin-bottom: 30px;
+}
+
+div.page.contact div.direct input,
+div.page.contact div.direct textarea {
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border: var(--grayed) 2px solid;
+  background-color: var(--bg);
+  margin-bottom: 20px;
+  border-radius: 6px;
+  outline: none;
+  color: var(--fg);
+}
+
+div.page.contact div.direct textarea {
+  min-height: 4em;
+  min-width: 540px;
+  max-width: 540px;
+}
+
+div.page.contact div.direct input[type="submit"] {
+  background-color: var(--accent);
+  border: none;
+  font-weight: bold;
+  padding: 15px 0;
+  color: var(--bg);
+}
+
+div.page.contact div.direct input[type="submit"]:disabled {
+  opacity: 0.5;
+}
+
+div.page.contact div.direct h2 {
+  color: var(--accent);
+}
+
 @media screen and (max-width: 700px) {
   div.page.contact h1 {
     text-align: left;
@@ -69,8 +119,8 @@ div.page.contact div.contact-panes a.contact-direct {
 
   div.page.contact div.contact-panes div.links {
     border-right: none;
-    margin-bottom: 30px;
-    padding-bottom: 30px !important;
+    margin-bottom: 20px;
+    /* padding-bottom: 30px !important; */
     border-bottom: var(--grayed) 1px solid;
   }
 
@@ -81,6 +131,24 @@ div.page.contact div.contact-panes a.contact-direct {
   div.page.contact div.contact-panes div.pane {
     padding: 0;
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  div.page.contact div.direct {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  div.page.contact div.contact-panes section:last-child {
+    margin-bottom: 30px;
+  }
+
+  div.page.contact div.contact-panes section:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  div.page.contact div.direct textarea {
     min-width: 100%;
     max-width: 100%;
   }

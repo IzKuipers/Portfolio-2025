@@ -18,8 +18,8 @@
   <p class="subtitle">
     <ProgressiveWriter
       text={["And this place is all ", { href: "/about", text: "about me" }]}
-      speed={50}
-      delay={3000}
+      speed={40}
+      delay={2800}
     />
     <noscript>And this place is all about me</noscript>
   </p>

@@ -52,6 +52,7 @@ div.page.home p.subtitle {
   position: relative;
   font-size: var(--small-header);
   text-align: center;
+  max-width: 600px;
 }
 
 div.page.home div.forced-break {
