@@ -43,14 +43,15 @@ div.page.projects div.carousel-wrapper button.navigate {
   font-size: 24px;
   outline: none;
   transition: transform 250ms;
+  transform: translateZ(0);
 }
 
 div.page.projects div.carousel-wrapper button.navigate:hover:not(:active) {
-  transform: rotate(360deg);
+  transform: rotate(360deg) translateZ(0);
 }
 
 div.page.projects div.carousel-wrapper button.navigate:active {
-  transform: translate(5px, -5px) rotate(-45deg);
+  transform: translate(5px, -5px) rotate(-45deg) translateZ(0);
 }
 
 div.page.projects div.carousel-wrapper div.links {
@@ -92,7 +93,7 @@ div.page.projects div.carousel-wrapper button.navigate + button.navigate {
 }
 
 div.page.projects div.carousel-wrapper button.navigate:first-child:active {
-  transform: translate(-5px, -5px) rotate(45deg) !important;
+  transform: translate(-5px, -5px) rotate(45deg) translateZ(0) !important;
 }
 
 div.page.projects div.carousel div.project {
