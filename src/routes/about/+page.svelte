@@ -43,12 +43,12 @@
     </div>
     <div class="skill">
       <h5 class="title">Backend</h5>
-      <p class="content">HTML, CSS, JS, TS, Svelte, PHP</p>
+      <p class="content">NodeJS, MongoDB, SQL, SvelteKit, C#, Go</p>
     </div>
     <div class="skill">
       <h5 class="title">All languages in one place</h5>
       <p class="content">
-        HTML, CSS, JS, TS, C#, Go, Rust<span class="grayed">*</span>, Python<span
+        C#, Go, HTML, CSS, JS, TS, Rust<span class="grayed">*</span>, Python<span
           class="grayed">*</span
         >, C++<span class="grayed">*</span>
       </p>
