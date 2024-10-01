@@ -16,7 +16,7 @@
   }
 
   function next() {
-    if (index + 1 >= Projects.length - 1) {
+    if (index + 1 >= Projects.length) {
       index = 0;
 
       return;
