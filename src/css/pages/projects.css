@@ -156,8 +156,8 @@ div.page.projects div.descriptions p.more {
     border: none;
     border-top: var(--grayed) 2px solid;
     border-bottom: var(--grayed) 2px solid;
-    max-height: 60%;
-    aspect-ratio: 1/1;
+    /* max-height: 60%; */
+    aspect-ratio: 16/11;
     margin-bottom: 0;
     max-width: unset;
   }
