@@ -99,9 +99,15 @@
     </div>
   </div>
   <div class="descriptions">
-    {#each Projects as { longDescription, htmlUrl, codeUrl }, i}
+    {#each Projects as { longDescription, htmlUrl, codeUrl, discontinued }, i}
       {#if index === i}
         <div class="project">
+          {#if discontinued}
+            <p class="discontinued red">
+              I've pulled the plug on this project! It is no longer being
+              maintained, but it's still a good example of what I can do.
+            </p>
+          {/if}
           <p>
             {@html longDescription}
           </p>

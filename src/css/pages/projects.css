@@ -149,6 +149,11 @@ div.page.projects div.descriptions p.more {
   margin-bottom: 60px;
 }
 
+div.page.projects div.descriptions p.discontinued {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 800px) {
   div.page.projects div.carousel-wrapper {
     margin: 0;

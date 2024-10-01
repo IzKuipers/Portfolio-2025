@@ -4,6 +4,7 @@ import Donut from "../../assets/donut.png";
 import Inepta from "../../assets/inepta.png";
 import InsType from "../../assets/instype.png";
 import Sacruda from "../../assets/sacruda.png";
+import vTDx from "../../assets/vtdx.png";
 import type { Project } from "../../types/projects";
 
 export const Projects: Project[] = [
@@ -61,6 +62,17 @@ export const Projects: Project[] = [
     image: Inepta,
     longDescription:
       "Inepta is a silly blast from the past: it's (start of) an OS written in vanilla Javascript to look back at the legacy ArcOS days. I made it to see exactly what's actually possible with just plain old vanilla Javascript in a modern browser. To my surprise, it's actually quite a lot. Inepta (which is Latin for 'silly', by the way) sports Process Management, a virtual filesystem (by storing a JSON object in LocalStorage), and a modern-yet-old-school aesthetic. Everything about it is written in a simplistic and modular way to show beginner Javascript programmers (like my classmates) what's theoretically and practically possible in JS.",
+  },
+  {
+    name: "vTDx",
+    codeUrl: "https://github.com/vTDx",
+    htmlUrl: "https://vtdx.github.io/",
+    image: vTDx,
+    date: "2021-12-03",
+    description: "A Typescript-only todo list and note taking application",
+    longDescription:
+      "vTDx was a couple of things. First of all it was a test to see what I could do in Typescript. Because of this, the entirety of vTDx, including the UI, was written in Typescript only code by using the DOM's APIs. vTDx stands for Vite-ToDo-X. the X really didn't have much of a meaning, but I felt it added something to the name that was missing otherwise. Anyway, vTDx was a continuation of TDx: another note taking application that I made using Vanilla JS in Electron.<br><br>I didn't have much of a vision when creating vTDx. I just wanted to see what was possible with my current Typescript skillset, so I chose to remake one of the projects that I was proud of at the time. Looking back, the design of both TDx and vTDx leave a lot to be desired, at least in my honest opinion, but all and all they weren't so bad. vTDx doesn't have a lot of customizability, but it does have a handful of both light mode and dark mode themes. You can collapse the sidebar, there's a trash, and a bunch more stuff I quite honestly can't remember anymore.<br><br>Now that ArcOS is dead, I think vTDx is my longest lasting project to date to still have an online deployment somewhere. I can't imagine how many security vulnerabilities have risen in the versions of the libraries I've used though, that's probably something I'd get nightmares about if I dare to open Dependabot, so, for my own sake, I won't. vTDx probably should have been discontinued and archived a LONG time ago, but in writing this I've decided not to. Just for the memes.",
+    discontinued: true,
   },
   {
     name: "Donut.c-TS",
