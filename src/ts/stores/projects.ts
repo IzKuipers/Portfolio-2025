@@ -50,7 +50,7 @@ export const Projects: Project[] = [
     date: "2024-08-10",
     image: InsType,
     longDescription:
-      "InsType is a fun one. It expands upon the traditional telephone communication (perhaps discord with screen sharing too) and transforms it into a purely textual environment. When you join InsType, you're in this one room with everyone else that's connected. When you type even one character, that character is displayed to the room, meaning that everyone else can see what you type, especially the typos. This encourages the user to type carefully in order to not prevent embarrassing themselves. InsType is powered with a Typescript Socket.IO backend, with a rather simple set of events to connect, disconnect and transmit text. InsType is one of my simplest Socket.IO applications, despite the fact that it's often the most fun.",
+      "InsType is a fun one. It expands upon the traditional telephone communication and transforms it into a purely textual environment. When you join InsType, you're in this one room with everyone else that's connected. When you type even one character, that character is displayed to the room, meaning that everyone else can see what you type, especially the typos. This encourages the user to type carefully in order to not embarrass themselves. InsType is powered with a Typescript Socket.IO backend, with a rather simple set of events to connect, disconnect and transmit text. InsType is one of my simplest Socket.IO applications, despite the fact that it's often the most fun.",
   },
   {
     name: "Inepta",
