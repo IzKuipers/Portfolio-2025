@@ -1,6 +1,6 @@
 # Hi! I'm Izaak
 
-> And this portfolio is all about me
+### And this portfolio is all about me
 
 On this site I show off what I can do, and what I've done in the past. Want to know how my skills came to be? Or how long I've been active in IT? It's all here.
 
