@@ -82,7 +82,7 @@ div.page.contact div.direct textarea {
 }
 
 div.page.contact div.direct textarea {
-  min-height: 4em;
+  min-height: 8em;
   min-width: 540px;
   max-width: 540px;
 }
@@ -93,10 +93,19 @@ div.page.contact div.direct input[type="submit"] {
   font-weight: bold;
   padding: 15px 0;
   color: var(--bg);
+  transition: filter 0.3s;
 }
 
 div.page.contact div.direct input[type="submit"]:disabled {
   opacity: 0.5;
+}
+
+div.page.contact div.direct input[type="submit"]:hover {
+  filter: brightness(1.2);
+}
+
+div.page.contact div.direct input[type="submit"]:active {
+  filter: brightness(0.9);
 }
 
 div.page.contact div.direct h2 {

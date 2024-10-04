@@ -28,10 +28,10 @@ div.page.projects div.carousel {
 
 div.page.projects div.carousel-wrapper button.navigate {
   position: absolute;
-  top: 0%;
-  left: 0;
-  width: 80px;
-  height: 80px;
+  top: 15px;
+  left: 15px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,8 +42,10 @@ div.page.projects div.carousel-wrapper button.navigate {
   background-color: transparent;
   font-size: 24px;
   outline: none;
-  transition: transform 250ms;
+  transition: transform 250ms, background-color 250ms;
   transform: translateZ(0);
+  background-color: #0003;
+  border-radius: 10px;
 }
 
 div.page.projects div.carousel-wrapper button.navigate:hover:not(:active) {
@@ -52,6 +54,7 @@ div.page.projects div.carousel-wrapper button.navigate:hover:not(:active) {
 
 div.page.projects div.carousel-wrapper button.navigate:active {
   transform: translate(5px, -5px) rotate(-45deg) translateZ(0);
+  background-color: transparent;
 }
 
 div.page.projects div.carousel-wrapper div.links {
@@ -89,7 +92,7 @@ div.page.projects div.carousel-wrapper a.material-icons-round:active {
 
 div.page.projects div.carousel-wrapper button.navigate + button.navigate {
   left: unset;
-  right: 0;
+  right: 15px;
 }
 
 div.page.projects div.carousel-wrapper button.navigate:first-child:active {
@@ -130,6 +133,10 @@ div.page.projects div.carousel div.project {
       var(--background);
     background-position: center;
     background-size: cover;
+  }
+
+  div.page.projects div.carousel-wrapper button.navigate {
+    background-color: transparent;
   }
 }
 
