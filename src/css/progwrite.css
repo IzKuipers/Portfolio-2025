@@ -11,6 +11,9 @@ span.progressive-writer * {
 
 span.progressive-writer .link {
   cursor: pointer;
+  text-decoration: underline 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--grayed);
 }
 
 span.progressive-writer.blinker:has(span)::after {
