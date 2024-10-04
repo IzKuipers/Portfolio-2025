@@ -99,7 +99,14 @@ div.page.projects div.carousel-wrapper button.navigate:first-child:active {
 div.page.projects div.carousel div.project {
   background-image: var(--background);
 
-  background: linear-gradient(to right, #0009 0%, #0009 100%), var(--background);
+  background: linear-gradient(
+      to bottom,
+      #0000 0%,
+      #0000 25%,
+      var(--bg) 85%,
+      var(--bg) 100%
+    ),
+    var(--background);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -117,6 +124,12 @@ div.page.projects div.carousel div.project {
   div.page.projects div.carousel-wrapper > * {
     --fg: var(--bg);
     color: var(--fg);
+  }
+  div.page.projects div.carousel div.project {
+    background: linear-gradient(to bottom, #0009 0%, #0009 100%),
+      var(--background);
+    background-position: center;
+    background-size: cover;
   }
 }
 

@@ -25,7 +25,7 @@ main {
 }
 
 body {
-  background-color: var(--bg);
+  background: var(--bg-gradient);
   color: var(--fg);
   font-size: var(--normal-text-size);
   font-family: "Fira Mono";

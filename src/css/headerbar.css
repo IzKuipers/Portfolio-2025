@@ -4,7 +4,7 @@ header {
   position: sticky;
   top: 0;
   height: 72px;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
   z-index: 200000;
 }
 
@@ -45,8 +45,9 @@ nav.desktop-nav a {
 
 nav.desktop-nav a:hover {
   color: var(--accent);
-  scale: 1.1;
+  scale: 1.07;
   text-decoration: underline;
+  filter: none;
 }
 
 nav.desktop-nav a.active {

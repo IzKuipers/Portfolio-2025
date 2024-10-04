@@ -9,16 +9,17 @@
   --bg: #fff;
   --fg: #000;
   --grayed: #ddd;
-  --accent: #ffa100;
+  --accent: #ffa200;
   --red: #ff6738;
 }
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --bg: #111;
+    --bg: #000;
+    --bg-gradient: linear-gradient(to bottom, var(--bg) 0%, #00070c 100%);
     --fg: #eee;
     --grayed: #333;
-    --accent: #018afa;
+    --accent: #61b8ff;
     --red: #ff6738;
   }
 }
