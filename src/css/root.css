@@ -16,8 +16,8 @@
 @media screen and (prefers-color-scheme: dark) {
   :root {
     --bg: #000;
-    --bg-gradient: linear-gradient(to bottom, var(--bg) 0%, #00070c 100%);
-    --fg: #eee;
+    --bg-gradient: linear-gradient(to bottom, var(--bg) 0%, #00090f 100%);
+    --fg: #d6ecff;
     --grayed: #333;
     --accent: #61b8ff;
     --red: #ff6738;
