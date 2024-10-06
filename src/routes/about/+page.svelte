@@ -48,9 +48,9 @@
     <div class="skill">
       <h5 class="title">All languages in one place</h5>
       <p class="content">
-        C#, Go, HTML, CSS, JS, TS, Rust<span class="grayed">*</span>, Python<span
-          class="grayed">*</span
-        >, C++<span class="grayed">*</span>
+        C#, Go, HTML, CSS, JS, TS, PHP, SQL, VBA, Rust<span class="grayed"
+          >*</span
+        >, Python<span class="grayed">*</span>, C++<span class="grayed">*</span>
       </p>
     </div>
     <p class="disclaimer">
