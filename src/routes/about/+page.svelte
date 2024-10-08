@@ -25,10 +25,10 @@
   <p>
     I’ve been interested in IT from a very young age. I started experimenting
     with an old Windows XP machine at the age of 6, being programming away not a
-    year later when I got my first real PC at the age of 7. I started off with
-    Batch and VBS, eventually tackling HTML, CSS and Javascript. Over the years
-    I’ve tackled everything from operating system environments to API’s and
-    embedded applications.
+    year later when I got my first real PC at the age of 7. The first languages
+    I took a crack at were Batch and VBS, eventually tackling HTML, CSS and
+    Javascript. Over the years I’ve tackled everything from web operating system
+    environments to API’s and embedded applications.
   </p>
 
   <h2>
