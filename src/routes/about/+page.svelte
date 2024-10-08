@@ -1,5 +1,6 @@
 <script>
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
+  import { _ } from "svelte-i18n";
 </script>
 
 <svelte:head>
