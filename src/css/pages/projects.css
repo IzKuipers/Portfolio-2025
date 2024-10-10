@@ -37,14 +37,15 @@ div.page.projects div.carousel-wrapper button.navigate {
   justify-content: center;
   /* border-radius: 50%; */
   border: none;
-  color: var(--fg);
+  color: var(--bg);
   z-index: 10;
   background-color: transparent;
   font-size: 24px;
   outline: none;
   transition: transform 250ms, background-color 250ms;
   transform: translateZ(0);
-  background-color: #0003;
+  background-color: var(--accent);
+  border: var(--grayed) 1px solid;
   border-radius: 10px;
 }
 
@@ -135,7 +136,7 @@ div.page.projects div.carousel div.project {
     background-size: cover;
   }
 
-  div.page.projects div.carousel-wrapper button.navigate {
+  div.page.projects div.carousel-wrapper {
     background-color: transparent;
   }
 }
