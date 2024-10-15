@@ -1,6 +1,7 @@
 div.page.projects {
   z-index: 0;
   position: relative;
+  overflow-y: scroll;
 }
 
 div.page.projects div.carousel-wrapper {
@@ -50,12 +51,11 @@ div.page.projects div.carousel-wrapper button.navigate {
 }
 
 div.page.projects div.carousel-wrapper button.navigate:hover:not(:active) {
-  transform: rotate(360deg) translateZ(0);
+  filter: brightness(120%);
 }
 
 div.page.projects div.carousel-wrapper button.navigate:active {
-  transform: translate(5px, -5px) rotate(-45deg) translateZ(0);
-  background-color: transparent;
+  filter: brightness(80%);
 }
 
 div.page.projects div.carousel-wrapper div.links {

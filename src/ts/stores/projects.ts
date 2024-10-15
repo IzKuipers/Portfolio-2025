@@ -61,7 +61,7 @@ export const Projects: Project[] = [
     date: "2024-08-16",
     image: Inepta,
     longDescription:
-      "Inepta is a silly blast from the past: it's (start of) an OS written in vanilla Javascript to look back at the legacy ArcOS days. I made it to see exactly what's actually possible with just plain old vanilla Javascript in a modern browser. To my surprise, it's actually quite a lot. Inepta (which is Latin for 'silly', by the way) sports Process Management, a virtual filesystem (by storing a JSON object in LocalStorage), and a modern-yet-old-school aesthetic. Everything about it is written in a simplistic and modular way to show beginner Javascript programmers (like my classmates) what's theoretically and practically possible in JS.",
+      "Inepta is a silly blast from the past: it's (start of) an OS written in vanilla Javascript to look back at the legacy ArcOS days. I made it to see exactly what's actually possible with just plain old vanilla Javascript in a modern browser. To my surprise, it's actually quite a lot. Inepta (which is Latin for 'silly', by the way) sports Process Management, a virtual filesystem (by storing a JSON object in LocalStorage), and a modern-yet-old-school aesthetic. Everything about it is written in a simplistic and modular way to show beginner Javascript programmers (like my classmates) what's theoretically and practically possible in JS.<br><br><b>WARNING!</b> The version of Inepta that's live on inepta.izkuipers.nl is <b><i>really</i></b> old. I've transitioned to Electron to better fulfill my vision for the project. More details are on the GitHub page.",
   },
   {
     name: "vTDx",
