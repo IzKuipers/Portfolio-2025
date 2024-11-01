@@ -112,8 +112,7 @@
             {@html longDescription}
           </p>
           {#if htmlUrl || codeUrl}
-            <p class="links">
-              <br />
+            <div class="links">
               {#if htmlUrl}
                 <a href={htmlUrl}>Website</a>
               {/if}
@@ -121,7 +120,7 @@
                 {#if htmlUrl}|{/if}
                 <a href={codeUrl}>View Code</a>
               {/if}
-            </p>
+            </div>
           {/if}
         </div>
       {/if}

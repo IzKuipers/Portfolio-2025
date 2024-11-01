@@ -124,6 +124,10 @@ div.page.projects div.carousel div.project {
   gap: 30px;
 }
 
+div.page.projects div.project > div.links {
+  margin-top: 2em;
+}
+
 @media screen and (prefers-color-scheme: light) {
   div.page.projects div.carousel-wrapper > * {
     --fg: var(--bg);
