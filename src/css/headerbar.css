@@ -28,8 +28,13 @@ header div.desktop-nav-wrapper {
   pointer-events: none;
 }
 
-nav.desktop-nav {
+nav li {
+  list-style: none;
+}
+
+nav.desktop-nav ul {
   display: flex;
+  height: 72px;
   gap: 60px;
   align-items: center;
   pointer-events: initial;

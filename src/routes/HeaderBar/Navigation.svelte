@@ -6,7 +6,11 @@
 </script>
 
 <nav class={className}>
-  {#each Object.entries(NavigationPages) as [route, caption]}
-    <a href={route} class:active={$page.route.id === route}>{caption}</a>
-  {/each}
+  <ul>
+    {#each Object.entries(NavigationPages) as [route, caption]}
+      <li>
+        <a href={route} class:active={$page.route.id === route}>{caption}</a>
+      </li>
+    {/each}
+  </ul>
 </nav>
