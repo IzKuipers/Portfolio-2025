@@ -198,8 +198,8 @@ div.page.projects div.descriptions p.discontinued {
 
   div.page.projects {
     position: absolute;
-    /* top: 0; */
     left: 0;
+    height: calc(100% - 72px);
     /* padding-top: 72px; */
   }
 
