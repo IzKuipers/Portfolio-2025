@@ -18,6 +18,12 @@ div.page.about > p {
   margin-bottom: 60px;
   line-height: 30px;
 }
+div.page.about > h1 {
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: var(--large-header);
+}
+
 div.page.about > h2 {
   font-size: var(--medium-header);
   margin-bottom: 20px;
@@ -33,12 +39,10 @@ div.page.about div.skills div.skill {
   margin-bottom: 20px;
 }
 
-div.page.about div.skills div.skill h5 {
+div.page.about div.skills div.skill h3 {
   line-height: 30px;
   font-size: var(--medium-text-size);
   opacity: 0.5;
-  position: relative;
-  z-index: -1 !important;
 }
 
 div.page.about div.skills p.disclaimer {

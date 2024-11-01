@@ -8,6 +8,11 @@
 </svelte:head>
 
 <div class="page about">
+  <h1>
+    <ProgressiveWriter text={["About Me"]} speed={40} delay={300} />
+    <noscript>About Me</noscript>
+  </h1>
+
   <p>
     Hi! I’m Izaak, a 17 year-old fullstack enthusiast developer from the
     Netherlands. I aim to write software that’s easy to use and that just gets
@@ -39,15 +44,15 @@
 
   <div class="skills">
     <div class="skill">
-      <h5 class="title">Frontend</h5>
+      <h3 class="title">Frontend</h3>
       <p class="content">HTML, CSS, JS, TS, Svelte, PHP</p>
     </div>
     <div class="skill">
-      <h5 class="title">Backend</h5>
+      <h3 class="title">Backend</h3>
       <p class="content">NodeJS, MongoDB, SQL, SvelteKit, C#, Go</p>
     </div>
     <div class="skill">
-      <h5 class="title">All languages in one place</h5>
+      <h3 class="title">All languages in one place</h3>
       <p class="content">
         C#, Go, HTML, CSS, JS, TS, PHP, SQL, VBA, Rust<span class="grayed"
           >*</span
