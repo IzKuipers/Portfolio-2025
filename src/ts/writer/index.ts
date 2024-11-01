@@ -65,7 +65,7 @@ export class ProgressiveWriter {
         return await Sleep(this.speed);
     }
 
-    (wrapper || this.target).append(byte);
+    (wrapper || this.target).innerText += byte;
   }
 
   lineBreak() {
