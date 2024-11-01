@@ -13,10 +13,6 @@ header > svg {
   height: 32px;
 }
 
-header > svg:hover {
-  scale: 1.3;
-}
-
 header div.desktop-nav-wrapper {
   position: absolute;
   top: 0;
