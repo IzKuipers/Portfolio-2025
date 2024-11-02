@@ -65,6 +65,14 @@ div.page.contact div.direct p {
   margin-bottom: 30px;
 }
 
+div.page.contact div.direct label {
+  font-size: var(--medium-text-size);
+  opacity: 0.6;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
 div.page.contact div.direct input,
 div.page.contact div.direct textarea {
   width: 100%;
@@ -75,10 +83,15 @@ div.page.contact div.direct textarea {
   border: none;
   border: var(--grayed) 2px solid;
   background-color: var(--bg);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 6px;
   outline: none;
   color: var(--fg);
+}
+
+div.page.contact div.direct input:not([type="submit"]):focus,
+div.page.contact div.direct textarea:focus {
+  border-color: var(--accent);
 }
 
 div.page.contact div.direct textarea {

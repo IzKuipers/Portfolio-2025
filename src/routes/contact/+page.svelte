@@ -66,23 +66,15 @@
       {$_("contact.direct.text")}
     </p>
     <form action="/contact/direct" method="post">
-      <input
-        type="text"
-        name="name"
-        placeholder={$_("contact.direct.name")}
-        required
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder={$_("contact.direct.email")}
-        required
-      />
-      <textarea
-        name="message"
-        placeholder={$_("contact.direct.message")}
-        required
-      ></textarea>
+      <label for="name">{$_("contact.direct.name")}</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">{$_("contact.direct.email")}</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">{$_("contact.direct.message")}</label>
+      <textarea name="message" id="message" required></textarea>
+
       <input type="submit" value={$_("contact.direct.send")} />
     </form>
   </div>
