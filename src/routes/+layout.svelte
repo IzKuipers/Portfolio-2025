@@ -12,12 +12,14 @@
 
   onMount(() => {
     const locale = getLocaleFromNavigator();
+    const chosenLocale = localStorage.getItem("locale");
 
     addMessages("en", english);
     addMessages("nl", dutch);
 
     init({
-      initialLocale: locale === "nl" || locale === "be" ? "nl" : "en",
+      initialLocale:
+        chosenLocale || (locale === "nl" || locale === "be" ? "nl" : "en"),
       fallbackLocale: "en",
     });
 

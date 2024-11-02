@@ -96,10 +96,6 @@ div.page.projects div.carousel-wrapper button.navigate + button.navigate {
   right: 15px;
 }
 
-div.page.projects div.carousel-wrapper button.navigate:first-child:active {
-  transform: translate(-5px, -5px) rotate(45deg) translateZ(0) !important;
-}
-
 div.page.projects div.carousel div.project {
   background-image: var(--background);
 
