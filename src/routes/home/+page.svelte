@@ -1,5 +1,6 @@
 <script lang="ts">
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
+  import AnimatedLogo from "./AnimatedLogo.svelte";
 </script>
 
 <svelte:head>
@@ -7,6 +8,7 @@
 </svelte:head>
 
 <div class="page home">
+  <AnimatedLogo />
   <h1>
     <ProgressiveWriter
       text={[
