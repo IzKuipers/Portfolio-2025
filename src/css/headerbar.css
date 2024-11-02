@@ -69,6 +69,58 @@ div.mobile-nav-wrapper {
   display: none;
 }
 
+div.language-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+nav.desktop-nav div.language-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  justify-content: end;
+  align-items: center;
+  pointer-events: none;
+}
+
+div.mobile-nav-wrapper div.language-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+div.mobile-nav-wrapper div.language-toggle > * {
+  opacity: 1;
+  color: var(--bg);
+}
+
+div.mobile-nav-wrapper div.language-toggle button.selected {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--bg);
+}
+
+div.language-toggle > * {
+  background-color: transparent;
+  color: var(--fg);
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  pointer-events: initial;
+  opacity: 0.5;
+}
+
+div.language-toggle > button:hover {
+  opacity: 1;
+}
+
+div.language-toggle > button.selected {
+  opacity: 1;
+  color: var(--accent);
+}
+
 @media screen and (max-width: 750px) {
   header {
     background-color: transparent;

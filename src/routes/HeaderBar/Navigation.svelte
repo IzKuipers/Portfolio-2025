@@ -2,8 +2,10 @@
   import { page } from "$app/stores";
   import { _ } from "svelte-i18n";
   import { NavigationPages } from "../../ts/stores/pages";
+  import LanguageToggle from "./Navigation/LanguageToggle.svelte";
 
   export let className = "";
+  export let language: string;
 </script>
 
 <nav class={className}>
@@ -16,4 +18,5 @@
       </li>
     {/each}
   </ul>
+  <LanguageToggle {language} />
 </nav>

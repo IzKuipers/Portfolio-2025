@@ -6,6 +6,7 @@
   import Navigation from "./HeaderBar/Navigation.svelte";
 
   export let sidebarOpened: ReadableStore<boolean>;
+  export let language: string;
   let showMobileNav = false;
 
   onMount(() => {
@@ -14,6 +15,8 @@
     query.addEventListener("change", (e) => {
       showMobileNav = e.matches;
     });
+
+    showMobileNav = query.matches;
   });
 
   navigating.subscribe(() => {
@@ -25,7 +28,7 @@
   <Logo />
   {#if !showMobileNav}
     <div class="desktop-nav-wrapper">
-      <Navigation className="desktop-nav" />
+      <Navigation className="desktop-nav" {language} />
     </div>
   {/if}
   {#if showMobileNav}
@@ -39,6 +42,6 @@
 </header>
 {#if showMobileNav}
   <div class="mobile-nav-wrapper" class:show={$sidebarOpened}>
-    <Navigation className="mobile-nav" />
+    <Navigation className="mobile-nav" {language} />
   </div>
 {/if}

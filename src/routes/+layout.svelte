@@ -9,6 +9,7 @@
 
   let sidebarOpened = Store<boolean>(false);
   let loading = true;
+  let language = "en";
 
   onMount(() => {
     const locale = getLocaleFromNavigator();
@@ -17,9 +18,11 @@
     addMessages("en", english);
     addMessages("nl", dutch);
 
+    language =
+      chosenLocale || (locale === "nl" || locale === "be" ? "nl" : "en");
+
     init({
-      initialLocale:
-        chosenLocale || (locale === "nl" || locale === "be" ? "nl" : "en"),
+      initialLocale: language,
       fallbackLocale: "en",
     });
 
@@ -28,7 +31,7 @@
 </script>
 
 {#if !loading}
-  <HeaderBar {sidebarOpened} />
+  <HeaderBar {sidebarOpened} {language} />
   <div class="container">
     <slot />
   </div>
