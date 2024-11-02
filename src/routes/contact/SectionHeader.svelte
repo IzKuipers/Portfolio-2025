@@ -6,5 +6,4 @@
 
 <h3>
   <ProgressiveWriter text={[t]} speed={40} delay={300}></ProgressiveWriter>
-  <noscript>{t}</noscript>
 </h3>

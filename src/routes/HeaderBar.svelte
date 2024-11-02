@@ -16,7 +16,7 @@
     });
   });
 
-  navigating.subscribe((v) => {
+  navigating.subscribe(() => {
     $sidebarOpened = false;
   });
 </script>
@@ -32,8 +32,9 @@
     <button
       class="sidebar-toggle material-icons-round"
       on:click={() => ($sidebarOpened = !$sidebarOpened)}
-      >{$sidebarOpened ? "close" : "menu"}</button
     >
+      {$sidebarOpened ? "close" : "menu"}
+    </button>
   {/if}
 </header>
 {#if showMobileNav}

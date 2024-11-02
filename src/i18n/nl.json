@@ -4,7 +4,7 @@
     "hero": {
       "top": "Hoi!$ Ik ben ",
       "bottom": {
-        "text": "En deze plek gaat ",
+        "text": "En deze plek is alles ",
         "link": "over mij"
       }
     }
@@ -21,12 +21,12 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "summary": "Alle talen op één plek",
-      "disclaimer": "* Talen die ik nog aan het leren ben",
-      "projectsLink": {
-        "title": "Opmerkelijke projecten waar ik aan heb gewerkt",
-        "text": "Ik heb in de afgelopen 10 jaar aan een hoop projecten gewerkt, sommigen zeggen zelfs <b>te veel</b>. Om te zien wat ik heb gemaakt, neem een kijkje op mijn Projectenpagina:",
-        "link": "Mijn Projecten"
-      }
+      "disclaimer": "* Talen die ik nog aan het leren ben"
+    },
+    "projectsLink": {
+      "title": "Opmerkelijke projecten waar ik aan heb gewerkt",
+      "text": "Ik heb in de afgelopen 10 jaar aan een hoop projecten gewerkt, sommigen zeggen zelfs <b>te veel</b>. Om te zien wat ik heb gemaakt, neem een kijkje op mijn Projectenpagina:",
+      "link": "Mijn Projecten"
     }
   },
   "projects": {
@@ -77,7 +77,11 @@
       "name": "Hoe heet je?",
       "email": "Jouw e-mail?",
       "message": "Jouw bericht?",
-      "send": "Versturen"
+      "send": "Versturen",
+      "thankyou": {
+        "title": "Dankjewel!",
+        "message": "De e-mail is verstuurd! Ik zal zo snel als mogelijk jou een e-mail terug sturen."
+      }
     }
   }
 }

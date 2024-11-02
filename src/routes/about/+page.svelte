@@ -4,55 +4,49 @@
 </script>
 
 <svelte:head>
-  <title>About Me - Izaak Kuipers</title>
+  <title>{$_("about._name")} - Izaak Kuipers</title>
 </svelte:head>
 
 <div class="page about">
   <h1>
-    <ProgressiveWriter text={["About Me"]} speed={40} delay={300} />
-    <noscript>About Me</noscript>
+    <ProgressiveWriter text={[$_("about._name")]} speed={40} delay={300} />
   </h1>
 
   <p>
-    Hi! I’m Izaak, a 17 year-old fullstack enthusiast developer from the
-    Netherlands. I aim to write software that’s easy to use and that just gets
-    the job done. Over the years I’ve pushed the limits of what’s possible with
-    web technologies, even going as far as Web Operating Systems. In 2024 I
-    started working on my next biggest project: <a href="https://sacruda.nl"
-      >Sacruda</a
-    >.
+    {$_("about.summary")} <a href="https://sacruda.nl">Sacruda</a>.
   </p>
 
   <h2>
-    <ProgressiveWriter text={["My history"]} speed={40} delay={300} />
-    <noscript>My history</noscript>
+    <ProgressiveWriter
+      text={[$_("about.history.title")]}
+      speed={40}
+      delay={300}
+    />
   </h2>
 
   <p>
-    I’ve been interested in IT from a very young age. I started experimenting
-    with an old Windows XP machine at the age of 6, being programming away not a
-    year later when I got my first real PC at the age of 7. The first languages
-    I took a crack at were Batch and VBS, eventually tackling HTML, CSS and
-    Javascript. Over the years I’ve tackled everything from web operating system
-    environments to API’s and embedded applications.
+    {$_("about.history.text")}
   </p>
 
   <h2>
-    <ProgressiveWriter text={["Skills I've mastered"]} speed={40} delay={300} />
-    <noscript>Skills I've mastered</noscript>
+    <ProgressiveWriter
+      text={[$_("about.skills.title")]}
+      speed={40}
+      delay={300}
+    />
   </h2>
 
   <div class="skills">
     <div class="skill">
-      <h3 class="title">Frontend</h3>
+      <h3 class="title">{$_("about.skills.frontend")}</h3>
       <p class="content">HTML, CSS, JS, TS, Svelte, PHP</p>
     </div>
     <div class="skill">
-      <h3 class="title">Backend</h3>
+      <h3 class="title">{$_("about.skills.backend")}</h3>
       <p class="content">NodeJS, MongoDB, SQL, SvelteKit, C#, Go</p>
     </div>
     <div class="skill">
-      <h3 class="title">All languages in one place</h3>
+      <h3 class="title">{$_("about.skills.summary")}</h3>
       <p class="content">
         C#, Go, HTML, CSS, JS, TS, PHP, SQL, VBA, Rust<span class="grayed"
           >*</span
@@ -60,25 +54,21 @@
       </p>
     </div>
     <p class="disclaimer">
-      * Languages I'm learning but haven't mastered (yet)
+      {$_("about.skills.disclaimer")}
     </p>
   </div>
 
   <h2>
     <ProgressiveWriter
-      text={["Notable projects I've worked on"]}
+      text={[$_("about.projectsLink.title")]}
       speed={40}
       delay={300}
     />
-    <noscript>Notable projects I've worked on</noscript>
   </h2>
 
   <p>
-    I’ve worked on a lot of projects over the years, some would say even <b
-      >too many</b
-    >. To see what projects I’ve created in that time, take a look at my
-    Projects page:
+    {@html $_("about.projectsLink.text")}
     <br /><br />
-    <a href="/projects" class="projects">My Projects</a>
+    <a href="/projects" class="projects">{$_("about.projectsLink.link")}</a>
   </p>
 </div>

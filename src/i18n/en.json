@@ -4,7 +4,7 @@
     "hero": {
       "top": "Hi!$ I'm ",
       "bottom": {
-        "text": "And this place is all",
+        "text": "And this place is all ",
         "link": "about me"
       }
     }
@@ -21,12 +21,12 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "summary": "All languages in one place",
-      "disclaimer": "* Languages I'm learning but haven't mastered (yet)",
-      "projectsLink": {
-        "title": "Notable projects I've worked on",
-        "text": "I've worked on a lot of projects over the years, some would say even <b>too many</b>. To see what projects I've created in that time, take a look at my Projects page:",
-        "link": "My Projects"
-      }
+      "disclaimer": "* Languages I'm learning but haven't mastered (yet)"
+    },
+    "projectsLink": {
+      "title": "Notable projects I've worked on",
+      "text": "I've worked on a lot of projects over the years, some would say even <b>too many</b>. To see what projects I've created in that time, take a look at my Projects page:",
+      "link": "My Projects"
     }
   },
   "projects": {
@@ -77,7 +77,11 @@
       "name": "What's your name?",
       "email": "Your email?",
       "message": "Your message?",
-      "send": "Send"
+      "send": "Send",
+      "thankyou": {
+        "title": "Thank you!",
+        "message": "The email has been sent successfully! I'll get back to you as fast as I can."
+      }
     }
   }
 }

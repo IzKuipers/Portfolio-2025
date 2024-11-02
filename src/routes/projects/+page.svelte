@@ -2,6 +2,7 @@
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import dayjs from "dayjs";
   import { Projects } from "../../ts/stores/projects";
+  import { _ } from "svelte-i18n";
 
   let index = 0;
 
@@ -27,7 +28,7 @@
 </script>
 
 <svelte:head>
-  <title>Projects - Izaak Kuipers</title>
+  <title>{$_("projects._name")} - Izaak Kuipers</title>
 </svelte:head>
 
 <div class="page projects">
@@ -46,12 +47,11 @@
             <h1>
               {#if index === i}
                 <ProgressiveWriter
-                  text={[name]}
+                  text={[$_(name)]}
                   speed={40}
                   delay={300}
                   blinker
                 />
-                <noscript>{name}</noscript>
               {:else}
                 &nbsp;
               {/if}
@@ -59,11 +59,10 @@
             <p class="description">
               {#if index === i}
                 <ProgressiveWriter
-                  text={[description]}
+                  text={[$_(description)]}
                   speed={20}
                   delay={300}
                 />
-                <noscript>{description}</noscript>
               {:else}
                 &nbsp;
               {/if}
@@ -75,9 +74,6 @@
                   delay={500}
                   speed={30}
                 />
-                <noscript>
-                  {dayjs(date).format("MMMM YYYY")}
-                </noscript>
               {:else}
                 &nbsp;
               {/if}
@@ -104,21 +100,20 @@
         <div class="project">
           {#if discontinued}
             <p class="discontinued red">
-              I've pulled the plug on this project! It is no longer being
-              maintained, but it's still a good example of what I can do.
+              {$_("projects.discontinuedNotice")}
             </p>
           {/if}
           <p>
-            {@html longDescription}
+            {@html $_(longDescription)}
           </p>
           {#if htmlUrl || codeUrl}
             <div class="links">
               {#if htmlUrl}
-                <a href={htmlUrl}>Website</a>
+                <a href={htmlUrl}>{$_("projects.website")}</a>
               {/if}
               {#if codeUrl}
                 {#if htmlUrl}|{/if}
-                <a href={codeUrl}>View Code</a>
+                <a href={codeUrl}>{$_("projects.viewCode")}</a>
               {/if}
             </div>
           {/if}
@@ -126,7 +121,7 @@
       {/if}
     {/each}
     <p class="more">
-      There's more on <a href="https://github.com/IzKuipers">my GitHub</a>!
+      {@html $_("projects.moreProjects")}
     </p>
   </div>
 </div>

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
+  import { _ } from "svelte-i18n";
   import { NavigationPages } from "../../ts/stores/pages";
 
   export let className = "";
@@ -9,7 +10,9 @@
   <ul>
     {#each Object.entries(NavigationPages) as [route, caption]}
       <li>
-        <a href={route} class:active={$page.route.id === route}>{caption}</a>
+        <a href={route} class:active={$page.route.id === route}>
+          {$_(`${caption}._name`)}
+        </a>
       </li>
     {/each}
   </ul>
