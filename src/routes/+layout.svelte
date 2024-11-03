@@ -1,11 +1,11 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { addMessages, getLocaleFromNavigator, init } from "svelte-i18n";
   import "../css/main.css";
+  import english from "../i18n/en.json";
+  import dutch from "../i18n/nl.json";
   import { Store } from "../ts/writable";
   import HeaderBar from "./HeaderBar.svelte";
-  import { addMessages, getLocaleFromNavigator, init } from "svelte-i18n";
-  import dutch from "../i18n/nl.json";
-  import english from "../i18n/en.json";
 
   let sidebarOpened = Store<boolean>(false);
   let loading = true;

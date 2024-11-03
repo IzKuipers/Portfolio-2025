@@ -1,8 +1,8 @@
 <script>
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import dayjs from "dayjs";
-  import { Projects } from "../../ts/stores/projects";
   import { _ } from "svelte-i18n";
+  import { Projects } from "../../ts/stores/projects";
 
   let index = 0;
 
@@ -53,9 +53,8 @@
       </div>
     </div>
     <div class="carousel" style="--page: {index};">
-      {#each Projects as { name, htmlUrl, codeUrl, description, date, discontinued, image }, i}
+      {#each Projects as { name, htmlUrl, codeUrl, description, date, image }, i}
         <div class="project" style="--background: url({image});">
-          <!-- <div class="content"> -->
           <div class="info">
             <h1>
               {#if index === i}
@@ -102,7 +101,6 @@
               {/if}
             </div>
           {/if}
-          <!-- </div> -->
         </div>
       {/each}
     </div>
