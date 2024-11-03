@@ -36,9 +36,22 @@
     <button class="navigate material-icons-round" on:click={previous}>
       arrow_back
     </button>
+
     <button class="navigate material-icons-round" on:click={next}>
       arrow_forward
     </button>
+    <div class="page-indicator-wrapper">
+      <div class="page-indicator">
+        {#each Projects as { name }, i}
+          <button
+            class="dot"
+            class:active={index === i}
+            on:click={() => (index = i)}
+            title={name}
+          />
+        {/each}
+      </div>
+    </div>
     <div class="carousel" style="--page: {index};">
       {#each Projects as { name, htmlUrl, codeUrl, description, date, discontinued, image }, i}
         <div class="project" style="--background: url({image});">
