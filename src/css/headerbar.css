@@ -135,6 +135,7 @@ div.language-toggle > button.selected {
 
   header.nav-opened * {
     color: var(--fg) !important;
+    fill: var(--fg);
   }
 
   header.nav-opened > svg {

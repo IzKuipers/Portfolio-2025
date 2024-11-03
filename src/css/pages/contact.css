@@ -11,7 +11,7 @@ div.page.contact div.contact-panes {
   max-width: 860px;
   display: flex;
   margin: 0 auto;
-  border-bottom: var(--grayed) 1px solid;
+  border-bottom: var(--grayed) 2px solid;
 }
 
 div.page.contact div.contact-panes > div.pane {
@@ -34,7 +34,7 @@ div.page.contact div.contact-panes section a {
 }
 
 div.page.contact div.contact-panes div.links {
-  border-right: var(--grayed) 1px solid;
+  border-right: var(--grayed) 2px solid;
 }
 
 div.page.contact div.contact-panes div.links * {
@@ -81,8 +81,8 @@ div.page.contact div.direct textarea {
   font-family: inherit;
   font-size: inherit;
   border: none;
-  border: var(--grayed) 2px solid;
-  background-color: var(--bg);
+  border: #ffffff0a 2px solid;
+  background-color: #ffffff0a;
   margin-bottom: 30px;
   border-radius: 6px;
   outline: none;
