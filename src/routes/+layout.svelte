@@ -6,6 +6,7 @@
   import dutch from "../i18n/nl.json";
   import { Store } from "../ts/writable";
   import HeaderBar from "./HeaderBar.svelte";
+  import MouseGlow from "./MouseGlow.svelte";
 
   let sidebarOpened = Store<boolean>(false);
   let loading = true;
@@ -31,6 +32,7 @@
 </script>
 
 {#if !loading}
+  <MouseGlow />
   <HeaderBar {sidebarOpened} {language} />
   <div class="container">
     <slot />
