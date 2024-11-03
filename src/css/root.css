@@ -6,22 +6,12 @@
   --large-header: 32px;
   --medium-header: 26px;
   --small-header: 22px;
-  --bg: #fff;
-  --fg: #000;
-  --grayed: #ddd;
-  --accent: #ffa200;
+  --bg: #000;
+  --bg-gradient: linear-gradient(to bottom, var(--bg) 0%, #05141f 100%);
+  --fg: #d6ecff;
+  --grayed: #333;
+  --accent: #61b8ff;
   --red: #ff6738;
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  :root {
-    --bg: #000;
-    --bg-gradient: linear-gradient(to bottom, var(--bg) 0%, #05141f 100%);
-    --fg: #d6ecff;
-    --grayed: #333;
-    --accent: #61b8ff;
-    --red: #ff6738;
-  }
 }
 
 @media screen and (max-width: 780px) {
