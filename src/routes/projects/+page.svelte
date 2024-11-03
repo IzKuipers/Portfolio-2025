@@ -48,6 +48,7 @@
             class:active={index === i}
             on:click={() => (index = i)}
             title={name}
+            tabindex="-1"
           />
         {/each}
       </div>
@@ -94,10 +95,14 @@
           {#if htmlUrl || codeUrl}
             <div class="links">
               {#if htmlUrl}
-                <a href={htmlUrl} class="material-icons-round">link</a>
+                <a href={htmlUrl} class="material-icons-round" tabindex="-1"
+                  >link</a
+                >
               {/if}
               {#if codeUrl}
-                <a href={codeUrl} class="material-icons-round">code</a>
+                <a href={codeUrl} class="material-icons-round" tabindex="-1"
+                  >code</a
+                >
               {/if}
             </div>
           {/if}
