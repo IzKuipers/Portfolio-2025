@@ -4,6 +4,6 @@
   export let t = "";
 </script>
 
-<h3>
+<h2>
   <ProgressiveWriter text={[t]} speed={40} delay={300}></ProgressiveWriter>
-</h3>
+</h2>

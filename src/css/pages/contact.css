@@ -24,7 +24,7 @@ div.page.contact div.contact-panes section:not(:last-child) {
   margin-bottom: 30px;
 }
 
-div.page.contact div.contact-panes section h3 {
+div.page.contact div.contact-panes section h2 {
   font-size: var(--small-header);
   color: var(--accent);
 }
