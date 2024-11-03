@@ -12,6 +12,11 @@ div.mouse-glow {
   filter: brightness(1.2);
   z-index: -1;
   pointer-events: none;
+  display: none;
+}
+
+div.mouse-glow.show {
+  display: block;
 }
 
 button:hover,
