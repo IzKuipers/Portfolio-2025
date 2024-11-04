@@ -16,7 +16,7 @@ export const Projects: Project[] = [
     date: "2020-05-17",
     image: ArcOS,
     longDescription: "projects.arcos.longDescription",
-    color: "#008DFF",
+    color: "#4db0ff",
   },
   {
     name: "Sacruda",
@@ -46,17 +46,7 @@ export const Projects: Project[] = [
     date: "2024-08-10",
     image: InsType,
     longDescription: "projects.instype.longDescription",
-    color: "#FFAA00",
-  },
-
-  {
-    name: "CanvasScript",
-    codeUrl: "https://github.com/IzKuipers/CanvasScript-v1",
-    htmlUrl: "https://canvas.izkuipers.nl/",
-    description: "projects.canvasscript.description",
-    date: "2023-05-29",
-    image: CanvasScript,
-    longDescription: "projects.canvasscript.longDescription",
+    color: "#ffbb32",
   },
   {
     name: "vTDx",
@@ -68,6 +58,15 @@ export const Projects: Project[] = [
     longDescription: "projects.vtdx.longDescription",
     discontinued: true,
     color: "#61afef",
+  },
+  {
+    name: "CanvasScript",
+    codeUrl: "https://github.com/IzKuipers/CanvasScript-v1",
+    htmlUrl: "https://canvas.izkuipers.nl/",
+    description: "projects.canvasscript.description",
+    date: "2023-05-29",
+    image: CanvasScript,
+    longDescription: "projects.canvasscript.longDescription",
   },
   {
     name: "Donut.c-TS",

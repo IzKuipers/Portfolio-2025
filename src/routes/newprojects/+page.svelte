@@ -19,7 +19,7 @@
   <p>
     {$_("projects.gallery.text")}
   </p>
-  {#each Projects as project}
-    <Project {project} />
+  {#each Projects as project, i}
+    <Project {project} {i} />
   {/each}
 </div>

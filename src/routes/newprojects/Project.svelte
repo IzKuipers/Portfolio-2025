@@ -9,6 +9,7 @@
   let coloredCss = "";
 
   export let project: Project;
+  export let i: number;
 
   onMount(() => {
     if (!project.color) return;
@@ -34,7 +35,9 @@
 >
   <div class="info">
     <h1>
-      <ProgressiveWriter text={[$_(project.name)]} speed={40} delay={300} />
+      <a href="/projects/details/{i}">
+        <ProgressiveWriter text={[$_(project.name)]} speed={40} delay={300} />
+      </a>
     </h1>
     <p class="description">
       {$_(project.description)}
