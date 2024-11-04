@@ -8,8 +8,7 @@ div.mouse-glow {
   background-size: cover;
   background-position: center;
   translate: -300px -300px;
-  opacity: 0.2;
-  filter: brightness(1.2);
+  opacity: 0.1;
   z-index: -1;
   pointer-events: none;
   display: none;
