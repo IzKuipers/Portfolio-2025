@@ -2,13 +2,13 @@ div.mouse-glow {
   position: fixed;
   top: var(--y);
   left: var(--x);
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   background: radial-gradient(var(--accent) 0%, #0000 60%);
   background-size: cover;
   background-position: center;
-  translate: -200px -200px;
-  opacity: 0.1;
+  translate: -300px -300px;
+  opacity: 0.2;
   filter: brightness(1.2);
   z-index: -1;
   pointer-events: none;
