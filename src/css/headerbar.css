@@ -4,7 +4,6 @@ header {
   position: sticky;
   top: 0;
   height: 72px;
-  /* background-color: var(--bg); */
   z-index: 200000;
 }
 

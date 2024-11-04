@@ -44,7 +44,6 @@ body::before {
   background-size: 5vw 5vw;
   background-position: 0 0;
   opacity: 0.15;
-  /* z-index: 1000; */
   pointer-events: none;
   z-index: -1;
 }
@@ -87,7 +86,6 @@ a:active {
   body::before {
     background-size: 20vw 20vw;
     background-image: radial-gradient(var(--fg) 0.5vw, transparent 0);
-    /* position-anchor: 0.1; */
   }
 }
 

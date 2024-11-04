@@ -142,7 +142,6 @@ div.page.contact div.direct h2 {
   div.page.contact div.contact-panes div.links {
     border-right: none;
     margin-bottom: 20px;
-    /* padding-bottom: 30px !important; */
     border-bottom: var(--grayed) 1px solid;
   }
 

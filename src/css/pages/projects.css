@@ -7,7 +7,6 @@ div.page.projects {
 div.page.projects div.carousel-wrapper {
   width: 100%;
   max-width: 800px;
-  /* margin: 0 auto; */
   aspect-ratio: 16/9;
   overflow: hidden;
   position: relative;
@@ -36,7 +35,6 @@ div.page.projects div.carousel-wrapper button.navigate {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border-radius: 50%; */
   border: none;
   color: var(--bg);
   z-index: 10;
@@ -217,7 +215,6 @@ div.page.projects div.carousel-wrapper div.page-indicator .dot.active {
     border: none;
     border-top: var(--grayed) 2px solid;
     border-bottom: var(--grayed) 2px solid;
-    /* max-height: 60%; */
     aspect-ratio: 16/11;
     margin-bottom: 0;
     max-width: unset;
@@ -231,7 +228,6 @@ div.page.projects div.carousel-wrapper div.page-indicator .dot.active {
     position: absolute;
     left: 0;
     height: calc(100% - 72px);
-    /* padding-top: 72px; */
   }
 
   div.page.projects div.descriptions {
