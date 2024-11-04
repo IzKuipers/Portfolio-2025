@@ -17,6 +17,7 @@ div.page.projects div.new-projects-notice {
   border: #ff910022 2px solid;
   color: #ffae44;
   --accent: #ffae44;
+  margin-bottom: 40px;
 }
 
 div.page.projects div.carousel-wrapper {
@@ -28,7 +29,6 @@ div.page.projects div.carousel-wrapper {
   border-radius: 15px;
   border: var(--grayed) 3px solid;
   margin: 30px auto;
-  margin-bottom: 60px;
   z-index: 0;
 }
 
