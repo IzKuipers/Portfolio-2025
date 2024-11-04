@@ -9,15 +9,6 @@ import type { Project } from "../../types/projects";
 
 export const Projects: Project[] = [
   {
-    name: "Sacruda",
-    htmlUrl: "https://sacruda.nl/",
-    codeUrl: "https://github.com/Sacruda",
-    description: "projects.sacruda.description",
-    date: "2024-06-27",
-    image: Sacruda,
-    longDescription: "projects.sacruda.longDescription",
-  },
-  {
     name: "ArcOS",
     codeUrl: "https://github.com/IzK-ArcOS",
     discontinued: true,
@@ -25,7 +16,39 @@ export const Projects: Project[] = [
     date: "2020-05-17",
     image: ArcOS,
     longDescription: "projects.arcos.longDescription",
+    color: "#008DFF",
   },
+  {
+    name: "Sacruda",
+    htmlUrl: "https://sacruda.nl/",
+    codeUrl: "https://github.com/Sacruda",
+    description: "projects.sacruda.description",
+    date: "2024-06-27",
+    image: Sacruda,
+    longDescription: "projects.sacruda.longDescription",
+    color: "#a675e2",
+  },
+  {
+    name: "Inepta",
+    codeUrl: "https://github.com/IzKuipers/silly",
+    htmlUrl: "https://inepta.izkuipers.nl",
+    description: "projects.inepta.description",
+    date: "2024-08-16",
+    image: Inepta,
+    longDescription: "projects.inepta.longDescription",
+    color: "#ff6200",
+  },
+  {
+    name: "InsType",
+    codeUrl: "https://github.com/IzKuipers/Instype-Backend",
+    htmlUrl: "https://instype.izkuipers.nl/",
+    description: "projects.instype.description",
+    date: "2024-08-10",
+    image: InsType,
+    longDescription: "projects.instype.longDescription",
+    color: "#FFAA00",
+  },
+
   {
     name: "CanvasScript",
     codeUrl: "https://github.com/IzKuipers/CanvasScript-v1",
@@ -36,24 +59,6 @@ export const Projects: Project[] = [
     longDescription: "projects.canvasscript.longDescription",
   },
   {
-    name: "InsType",
-    codeUrl: "https://github.com/IzKuipers/Instype-Backend",
-    htmlUrl: "https://instype.izkuipers.nl/",
-    description: "projects.instype.description",
-    date: "2024-08-10",
-    image: InsType,
-    longDescription: "projects.instype.longDescription",
-  },
-  {
-    name: "Inepta",
-    codeUrl: "https://github.com/IzKuipers/silly",
-    htmlUrl: "https://inepta.izkuipers.nl",
-    description: "projects.inepta.description",
-    date: "2024-08-16",
-    image: Inepta,
-    longDescription: "projects.inepta.longDescription",
-  },
-  {
     name: "vTDx",
     codeUrl: "https://github.com/vTDx",
     htmlUrl: "https://vtdx.github.io/",
@@ -62,6 +67,7 @@ export const Projects: Project[] = [
     description: "projects.vtdx.description",
     longDescription: "projects.vtdx.longDescription",
     discontinued: true,
+    color: "#61afef",
   },
   {
     name: "Donut.c-TS",

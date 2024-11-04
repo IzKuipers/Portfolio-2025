@@ -32,6 +32,13 @@
 </svelte:head>
 
 <div class="page projects">
+  <div class="new-projects-notice">
+    <span class="material-icons-round">code</span>
+    <span>
+      {$_("projects.newNotice")}
+      <a href="/newprojects">{$_("projects.gallery.name")}</a>
+    </span>
+  </div>
   <div class="carousel-wrapper">
     <button class="navigate material-icons-round" on:click={previous}>
       arrow_back

@@ -31,6 +31,11 @@
   },
   "projects": {
     "_name": "Projects",
+    "newNotice": "I'm working on a new projects page! Have a look and let me know if you have any feedback:",
+    "gallery": {
+      "name": "Project Gallery",
+      "text": "Welcome to my Project Gallery! I've created a lot of projects over the years, more than I can fit on this page, but these are the most notable. Click on a project for more information."
+    },
     "sacruda": {
       "description": "A system to help students keep track of their school assignments.",
       "longDescription": "Sacruda's idea is simple. I wanted a simplistic yet powerful way to help me and other students keep track of their school assignments. What followed next was two months of exhaustive programming to create a rather huge project, requiring its own infrastructure to power it. It uses MongoDB for the database, Svelte for the frontend, and NodeJS (Typescript Express API) for the backend. Sacruda is the continuation of the SOS: a previous (and way worse) implementation of the same principle, running on a JSON based database (yikes) and threaded together pieces of ancient Svelte spaghetti.<br><br>Sacruda counts to over 38 thousand lines of code. It's got separate frontends for both mobile and desktop to deliver the best experience for both, an administration panel to manage users of the platform, even a discord bot to easily allow administrators to manage users on the go. Sacruda has powerful filtering, sorting and search options to help students manage their assignments in the most effective way possible. To read more about what Sacruda is capable of, please visit the website linked above (Dutch only, sorry!)"

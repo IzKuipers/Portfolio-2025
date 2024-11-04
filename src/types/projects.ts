@@ -7,4 +7,5 @@ export interface Project {
   discontinued?: boolean;
   longDescription: string;
   image: string;
+  color?: string;
 }
