@@ -18,6 +18,7 @@ div.page.projects div.new-projects-notice {
   color: #ffae44;
   --accent: #ffae44;
   margin-bottom: 40px;
+  line-height: 24px;
 }
 
 div.page.projects div.carousel-wrapper {
@@ -214,8 +215,15 @@ div.page.projects div.carousel-wrapper div.page-indicator .dot.active {
     border-top: var(--grayed) 2px solid;
     border-bottom: var(--grayed) 2px solid;
     aspect-ratio: 16/11;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     max-width: unset;
+  }
+
+  div.page.projects div.new-projects-notice {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
   }
 
   div.page.projects div.carousel-wrapper div.links {
