@@ -94,7 +94,9 @@ div.page.new-projects div.project.colored * {
     padding-top: 10px;
     margin-bottom: 20px;
   }
+}
 
+@media screen and (max-width: 500px) {
   div.page.new-projects div.project {
     aspect-ratio: 3/4;
   }

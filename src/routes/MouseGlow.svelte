@@ -12,7 +12,7 @@
       setTimeout(() => {
         x = e.clientX;
         y = e.clientY;
-      }, 0);
+      });
     });
 
     const query = window.matchMedia("(min-width: 750px)");

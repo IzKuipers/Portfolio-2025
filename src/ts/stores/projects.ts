@@ -36,7 +36,7 @@ export const Projects: Project[] = [
     date: "2024-08-16",
     image: Inepta,
     longDescription: "projects.inepta.longDescription",
-    color: "#ff6200",
+    color: "rgb(255, 152, 88)",
   },
   {
     name: "InsType",
