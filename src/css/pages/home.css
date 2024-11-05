@@ -66,16 +66,6 @@ div.page.home p.subtitle {
   max-width: 600px;
 }
 
-div.page.home div.forced-break {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  div.page.home div.forced-break {
-    display: block;
-  }
-}
-
 @keyframes dash {
   to {
     stroke-dashoffset: 0;

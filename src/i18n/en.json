@@ -86,6 +86,10 @@
       "thankyou": {
         "title": "Thank you!",
         "message": "The email has been sent successfully! I'll get back to you as fast as I can."
+      },
+      "failed": {
+        "title": "Oh no!",
+        "text": "Failed to send your message!$$ Please try again later."
       }
     }
   }

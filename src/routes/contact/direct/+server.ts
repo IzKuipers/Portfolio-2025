@@ -15,7 +15,9 @@ export const POST: RequestHandler = async ({ request }) => {
 
   if (!name || !email || !message) throw error(400, "Bad Request");
 
-  await sendMessage(name, email, message);
+  const sent = await sendMessage(name, email, message);
+
+  if (!sent) throw redirect(307, "/contact/failed");
 
   throw redirect(301, continueUrl);
 };

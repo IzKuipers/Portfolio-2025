@@ -86,6 +86,11 @@
       "thankyou": {
         "title": "Dankjewel!",
         "message": "De e-mail is verstuurd! Ik zal zo snel als mogelijk jou een e-mail terug sturen."
+      },
+
+      "failed": {
+        "title": "Oh nee!",
+        "text": "Kon jouw e-mail niet versturen! Probeer het later opnieuw."
       }
     }
   }

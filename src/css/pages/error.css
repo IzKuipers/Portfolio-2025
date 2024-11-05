@@ -19,3 +19,7 @@ div.page.error > h1 {
   text-align: center;
   color: var(--accent);
 }
+
+div.page.error > p {
+  text-align: center;
+}
