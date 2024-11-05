@@ -1,12 +1,12 @@
 div.page.new-projects {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 div.page.new-projects > * {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 div.page.new-projects div.project a {

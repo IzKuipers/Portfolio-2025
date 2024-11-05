@@ -21,7 +21,7 @@ export async function sendMessage(
 
     const info = await transport.sendMail({
       from: `"${name}" <${email}>`,
-      to: config.user,
+      to: config.to,
       subject: `Message sent from Contact Page by ${email}`,
       text: message,
     });
