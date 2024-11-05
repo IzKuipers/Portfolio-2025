@@ -96,3 +96,17 @@ div.page.project-details
   rotate: -6deg;
   filter: brightness(0.9) !important;
 }
+
+div.page.project-details p.discontinued {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+div.page.project-details div.breadcrumbs {
+  margin-bottom: 30px;
+}
+
+div.page.project-details div.breadcrumbs span + span::before {
+  content: "> ";
+  opacity: 0.5;
+}

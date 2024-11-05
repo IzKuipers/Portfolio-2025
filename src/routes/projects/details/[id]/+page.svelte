@@ -16,6 +16,7 @@
       image,
       discontinued,
     },
+    id,
   } = data;
 </script>
 
@@ -62,8 +63,14 @@
     {/if}
   </div>
 
+  <div class="breadcrumbs">
+    <span><a href="/home">Home</a></span>
+    <span><a href="/projects">{$_("projects._name")}</a></span>
+    <span><a href="/projects/details/{id}"><b>{name}</b></a></span>
+  </div>
+
   {#if discontinued}
-    <p class="discontinued-notice">
+    <p class="discontinued red">
       {$_("projects.discontinuedNotice")}
     </p>
   {/if}

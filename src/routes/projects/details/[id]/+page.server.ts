@@ -7,5 +7,5 @@ export const load = (async ({ params: { id } }) => {
 
   if (!project) throw error(404, "Not found");
 
-  return { project };
+  return { project, id };
 }) satisfies PageServerLoad;
