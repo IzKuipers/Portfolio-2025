@@ -19,10 +19,11 @@ div.page.home svg.animated-logo {
 }
 
 div.page.home svg.animated-logo .animation-target {
-  stroke-dasharray: 2150;
-  stroke-dashoffset: 2150;
-  animation: dash 7.5s 500ms linear forwards;
+  stroke-dasharray: 1140;
+  stroke-dashoffset: 1140;
+  animation: dash 3s 500ms linear forwards, fill 200ms 3.5s linear forwards;
   stroke: var(--accent);
+  fill: transparent;
 }
 
 div.page.home * {
@@ -69,5 +70,14 @@ div.page.home p.subtitle {
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: var(--accent);
   }
 }

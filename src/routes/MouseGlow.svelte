@@ -9,10 +9,8 @@
   onMount(() => {
     document.addEventListener("mousemove", (e) => {
       show = true;
-      setTimeout(() => {
-        x = e.clientX;
-        y = e.clientY;
-      });
+      x = e.clientX;
+      y = e.clientY;
     });
 
     const query = window.matchMedia("(min-width: 820px)");
