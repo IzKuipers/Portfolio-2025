@@ -15,7 +15,7 @@
       });
     });
 
-    const query = window.matchMedia("(min-width: 750px)");
+    const query = window.matchMedia("(min-width: 820px)");
 
     query.addEventListener("change", (e) => {
       render = e.matches;

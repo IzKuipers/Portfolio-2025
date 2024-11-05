@@ -8,10 +8,7 @@
 <div class="page new-projects">
   <h1>
     <ProgressiveWriter
-      text={[
-        $_("projects.gallery.name"),
-        { text: "BETA", className: "beta-tag" },
-      ]}
+      text={[$_("projects.gallery.name")]}
       speed={40}
       delay={300}
     />

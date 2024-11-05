@@ -1,4 +1,4 @@
-<a href="/home">
+<a href="/home" class="logo-link">
   <svg
     width="32"
     height="32"

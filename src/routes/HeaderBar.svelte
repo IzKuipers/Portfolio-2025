@@ -10,7 +10,7 @@
   let showMobileNav = false;
 
   onMount(() => {
-    const query = window.matchMedia("(max-width: 750px)");
+    const query = window.matchMedia("(max-width: 820px)");
 
     query.addEventListener("change", (e) => {
       showMobileNav = e.matches;
@@ -26,6 +26,9 @@
 
 <header class:nav-opened={$sidebarOpened}>
   <Logo />
+  {#if showMobileNav}
+    <h1 class="mobile-brand-name">IzK</h1>
+  {/if}
   {#if !showMobileNav}
     <div class="desktop-nav-wrapper">
       <Navigation className="desktop-nav" {language} />

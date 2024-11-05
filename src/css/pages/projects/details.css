@@ -18,12 +18,12 @@ div.page.project-details > h1 {
 
 div.page.project-details > div.screenshot {
   width: 100%;
-  max-width: 800px;
+  max-width: 820px;
   aspect-ratio: 16/9;
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  outline: var(--grayed) 3px solid;
+  border: #222 3px solid;
   margin: 30px auto;
   z-index: 0;
   background: linear-gradient(
@@ -103,10 +103,62 @@ div.page.project-details p.discontinued {
 }
 
 div.page.project-details div.breadcrumbs {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
 div.page.project-details div.breadcrumbs span + span::before {
   content: "> ";
   opacity: 0.5;
+}
+
+div.page.project-details div.main-content div.links {
+  margin-top: 30px;
+}
+
+div.page.project-details p.more {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+div.page.project-details div.main-content {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 820px) {
+  div.page.project-details div.screenshot {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    border-top: #222 2px solid;
+    border-bottom: #222 2px solid;
+    aspect-ratio: 16/11;
+    margin-bottom: 20px;
+    max-width: unset;
+  }
+
+  div.page.project-details div.screenshot div.links {
+    display: none;
+  }
+
+  div.page.project-details {
+    position: absolute;
+    left: 0;
+    height: calc(100% - 92px);
+  }
+
+  div.page.project-details div.main-content {
+    padding: 20px;
+  }
+
+  div.page.project-details div.breadcrumbs {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  div.page.project-details div.screenshot {
+    display: none;
+  }
 }

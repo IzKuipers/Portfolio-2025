@@ -12,6 +12,12 @@ header > svg {
   height: 32px;
 }
 
+header a.logo-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
 header div.desktop-nav-wrapper {
   position: absolute;
   top: 0;
@@ -21,6 +27,14 @@ header div.desktop-nav-wrapper {
   display: flex;
   justify-content: center;
   pointer-events: none;
+}
+
+header h1.mobile-brand-name {
+  font-size: var(--large-text-size);
+  margin-left: 20px;
+  opacity: 0.8;
+  line-height: 32px;
+  font-weight: 1000;
 }
 
 nav li {
@@ -120,7 +134,7 @@ div.language-toggle > button.selected {
   color: var(--accent);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 820px) {
   header {
     background-color: transparent;
   }

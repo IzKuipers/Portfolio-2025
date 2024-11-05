@@ -62,19 +62,34 @@
       </div>
     {/if}
   </div>
+  <div class="main-content">
+    <div class="breadcrumbs">
+      <span><a href="/home">Home</a></span>
+      <span><a href="/projects">{$_("projects._name")}</a></span>
+      <span><a href="/projects/details/{id}"><b>{name}</b></a></span>
+    </div>
 
-  <div class="breadcrumbs">
-    <span><a href="/home">Home</a></span>
-    <span><a href="/projects">{$_("projects._name")}</a></span>
-    <span><a href="/projects/details/{id}"><b>{name}</b></a></span>
-  </div>
-
-  {#if discontinued}
-    <p class="discontinued red">
-      {$_("projects.discontinuedNotice")}
+    {#if discontinued}
+      <p class="discontinued red">
+        {$_("projects.discontinuedNotice")}
+      </p>
+    {/if}
+    <p>
+      {@html $_(longDescription)}
     </p>
-  {/if}
-  <p>
-    {@html $_(longDescription)}
-  </p>
+    {#if htmlUrl || codeUrl}
+      <div class="links">
+        {#if htmlUrl}
+          <a href={htmlUrl} target="_blank">{$_("projects.website")}</a>
+        {/if}
+        {#if codeUrl}
+          {#if htmlUrl}|{/if}
+          <a href={codeUrl} target="_blank">{$_("projects.viewCode")}</a>
+        {/if}
+      </div>
+    {/if}
+    <p class="more">
+      {@html $_("projects.moreProjects")}
+    </p>
+  </div>
 </div>
