@@ -9,6 +9,10 @@ div.page.new-projects > * {
   max-width: 700px;
 }
 
+div.page.new-projects div.project a {
+  text-decoration: none;
+}
+
 div.page.new-projects > h1 {
   color: var(--accent);
   margin-bottom: 20px;

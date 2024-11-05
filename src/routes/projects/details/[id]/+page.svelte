@@ -1,15 +1,73 @@
 <script lang="ts">
+  import { _ } from "svelte-i18n";
   import type { PageData } from "./$types";
+  import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
+  import dayjs from "dayjs";
 
   export let data: PageData;
-  const { project } = data;
+  const {
+    project: {
+      name,
+      description,
+      longDescription,
+      date,
+      htmlUrl,
+      codeUrl,
+      image,
+      discontinued,
+    },
+  } = data;
 </script>
 
-<div class="page about">
-  <h1>Work in progress</h1>
+<div class="page project-details">
+  <div class="screenshot" style="--background: url({image})">
+    <div class="info">
+      <h1>
+        <ProgressiveWriter text={[name]} speed={40} delay={300} blinker />
+      </h1>
+      <p class="description">
+        <ProgressiveWriter text={[$_(description)]} speed={20} delay={300} />
+      </p>
+      <p class="date">
+        <ProgressiveWriter
+          text={[dayjs(date).format("MMMM YYYY")]}
+          delay={500}
+          speed={30}
+        />
+      </p>
+    </div>
+    {#if htmlUrl || codeUrl}
+      <div class="links">
+        {#if htmlUrl}
+          <a
+            href={htmlUrl}
+            class="material-icons-round"
+            tabindex="-1"
+            target="_blank"
+          >
+            link
+          </a>
+        {/if}
+        {#if codeUrl}
+          <a
+            href={codeUrl}
+            class="material-icons-round"
+            tabindex="-1"
+            target="_blank"
+          >
+            code
+          </a>
+        {/if}
+      </div>
+    {/if}
+  </div>
+
+  {#if discontinued}
+    <p class="discontinued-notice">
+      {$_("projects.discontinuedNotice")}
+    </p>
+  {/if}
   <p>
-    I'm still working on this page! Until it's done, here's the JSON of the
-    project you requested:
+    {@html $_(longDescription)}
   </p>
-  <pre>{JSON.stringify(project, null, 2)}</pre>
 </div>

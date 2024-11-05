@@ -95,14 +95,24 @@
           {#if htmlUrl || codeUrl}
             <div class="links">
               {#if htmlUrl}
-                <a href={htmlUrl} class="material-icons-round" tabindex="-1"
-                  >link</a
+                <a
+                  href={htmlUrl}
+                  class="material-icons-round"
+                  tabindex="-1"
+                  target="_blank"
                 >
+                  link
+                </a>
               {/if}
               {#if codeUrl}
-                <a href={codeUrl} class="material-icons-round" tabindex="-1"
-                  >code</a
+                <a
+                  href={codeUrl}
+                  class="material-icons-round"
+                  tabindex="-1"
+                  target="_blank"
                 >
+                  code
+                </a>
               {/if}
             </div>
           {/if}
