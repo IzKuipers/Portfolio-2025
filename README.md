@@ -6,6 +6,8 @@ On this site I show off what I can do, and what I've done in the past. Want to k
 
 View the live deployment of this portfolio here: https://izkuipers.nl/home
 
+#### Proudly using Svelte 4. Svelte 5 hasn't convinced me yet.
+
 ## Running the frontend
 
 First of all, clone the git repository:
