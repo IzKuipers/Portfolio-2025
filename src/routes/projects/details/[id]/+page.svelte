@@ -20,6 +20,10 @@
   } = data;
 </script>
 
+<svelte:head>
+  <title>{name} - {$_("projects.gallery.name")} - Izaak Kuipers</title>
+</svelte:head>
+
 <div class="page project-details">
   <div class="screenshot" style="--background: url({image})">
     <div class="info">

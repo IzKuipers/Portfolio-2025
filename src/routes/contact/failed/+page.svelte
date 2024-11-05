@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Thank You :D - Izaak Kuipers</title>
+  <title>{$_("contact.direct.failed.title")} - Izaak Kuipers</title>
 </svelte:head>
 
 <div class="page error">

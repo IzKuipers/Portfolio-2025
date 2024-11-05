@@ -5,6 +5,10 @@
   import Project from "./Project.svelte";
 </script>
 
+<svelte:head>
+  <title>{$_("projects.gallery.name")} - Izaak Kuipers</title>
+</svelte:head>
+
 <div class="page new-projects">
   <h1>
     <ProgressiveWriter
