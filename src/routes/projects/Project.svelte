@@ -1,10 +1,10 @@
 <script lang="ts">
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
-  import { _ } from "svelte-i18n";
-  import type { Project } from "../../types/projects";
   import dayjs from "dayjs";
   import { onMount } from "svelte";
+  import { _ } from "svelte-i18n";
   import { projectColorVariations } from "../../ts/projects";
+  import type { Project } from "../../types/projects";
 
   let coloredCss = "";
 

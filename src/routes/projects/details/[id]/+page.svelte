@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { _ } from "svelte-i18n";
-  import type { PageData } from "./$types";
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import dayjs from "dayjs";
+  import { _ } from "svelte-i18n";
+  import type { PageData } from "./$types";
 
   export let data: PageData;
   const {
