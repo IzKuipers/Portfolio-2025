@@ -1,8 +1,10 @@
 {
+  "me": "@IzKuipers",
   "home": {
     "_name": "Home",
     "hero": {
       "top": "Hoi!$ Ik ben ",
+      "name": "Izaak",
       "bottom": {
         "text": "En deze plek is alles ",
         "link": "over mij"
