@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import { _ } from "svelte-i18n";
   import SectionHeader from "./SectionHeader.svelte";
+
+  let sending = false;
 </script>
 
 <svelte:head>
@@ -67,15 +69,21 @@
     </p>
     <form action="/contact/direct" method="post">
       <label for="name">{$_("contact.direct.name")}</label>
-      <input type="text" name="name" id="name" required />
+      <input type="text" name="name" id="name" required disabled={sending} />
 
       <label for="email">{$_("contact.direct.email")}</label>
-      <input type="email" name="email" id="email" required />
+      <input type="email" name="email" id="email" required disabled={sending} />
 
       <label for="message">{$_("contact.direct.message")}</label>
-      <textarea name="message" id="message" required></textarea>
+      <textarea name="message" id="message" required disabled={sending}
+      ></textarea>
 
-      <input type="submit" value={$_("contact.direct.send")} />
+      <input
+        type="submit"
+        value={$_("contact.direct.send")}
+        on:click={() => setTimeout(() => (sending = true), 10)}
+        disabled={sending}
+      />
     </form>
   </div>
 </div>
