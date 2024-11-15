@@ -7,19 +7,21 @@
   <title>{$_("contact.direct.failed.title")} - Izaak Kuipers</title>
 </svelte:head>
 
-<div class="page error">
-  <h1>
-    <ProgressiveWriter
-      text={[$_("contact.direct.failed.title")]}
-      blinker
-      speed={40}
-    />
-  </h1>
-  <p class="subtitle">
-    <ProgressiveWriter
-      text={[$_("contact.direct.failed.text")]}
-      speed={20}
-      delay={500}
-    />
-  </p>
+<div class="page home">
+  <div class="hero">
+    <h1>
+      <ProgressiveWriter
+        text={[$_("contact.direct.failed.title")]}
+        blinker
+        speed={40}
+      />
+    </h1>
+    <p class="subtitle">
+      <ProgressiveWriter
+        text={[$_("contact.direct.failed.text")]}
+        speed={20}
+        delay={500}
+      />
+    </p>
+  </div>
 </div>
