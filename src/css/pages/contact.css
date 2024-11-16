@@ -89,6 +89,15 @@ div.page.contact div.direct textarea {
   color: var(--fg);
 }
 
+div.page.contact div.direct:has(input[id="name"]:focus) label[for="name"],
+div.page.contact div.direct:has(input[id="email"]:focus) label[for="email"],
+div.page.contact
+  div.direct:has(textarea[id="message"]:focus)
+  label[for="message"] {
+  color: var(--accent);
+  opacity: 1;
+}
+
 div.page.contact div.direct input:not([type="submit"]):focus,
 div.page.contact div.direct textarea:focus {
   border-color: var(--accent);
