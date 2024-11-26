@@ -71,6 +71,7 @@ div.page.contact div.direct label {
   font-weight: 500;
   display: block;
   margin-bottom: 10px;
+  transition: color 0.15s ease, opacity 0.15s ease;
 }
 
 div.page.contact div.direct input,
@@ -87,13 +88,12 @@ div.page.contact div.direct textarea {
   border-radius: 6px;
   outline: none;
   color: var(--fg);
+  transition: border-color 0.15s ease;
 }
 
 div.page.contact div.direct:has(input[id="name"]:focus) label[for="name"],
 div.page.contact div.direct:has(input[id="email"]:focus) label[for="email"],
-div.page.contact
-  div.direct:has(textarea[id="message"]:focus)
-  label[for="message"] {
+div.page.contact div.direct:has(textarea[id="message"]:focus) label[for="message"] {
   color: var(--accent);
   opacity: 1;
 }
