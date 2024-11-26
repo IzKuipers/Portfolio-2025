@@ -7,13 +7,17 @@
       location.reload();
     });
   }
+
+  const body = document.querySelector("body");
 </script>
 
 <div class="language-toggle">
   <button on:click={() => set("en")} class:selected={language === "en"}
     >EN</button
   >
-  <span>/</span>
+  <button on:click={() => {body?.classList.toggle("custom")}}
+    ><span>/</span></button
+  >
   <button on:click={() => set("nl")} class:selected={language === "nl"}
     >NL</button
   >
