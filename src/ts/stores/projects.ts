@@ -5,9 +5,19 @@ import Inepta from "../../assets/inepta.png";
 import InsType from "../../assets/instype.png";
 import Sacruda from "../../assets/sacruda.png";
 import vTDx from "../../assets/vtdx.png";
+import HackathonAward from "../../assets/dph24award.jpg";
 import type { Project } from "../../types/projects";
 
 export const Projects: Project[] = [
+  {
+    name: "Digital Proof Hackathon",
+    codeUrl: "https://github.com/Hackatjon-v2",
+    discontinued: true,
+    description: "projects.hackathon-24.description",
+    date: "2024-12-03",
+    image: HackathonAward,
+    longDescription: "projects.hackathon-24.longDescription",
+  },
   {
     name: "ArcOS",
     codeUrl: "https://github.com/IzK-ArcOS",

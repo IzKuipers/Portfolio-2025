@@ -75,6 +75,14 @@ a:active {
   filter: brightness(0.9);
 }
 
+ul {
+  padding-left: 30px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
 @media screen and (max-width: 600px) {
   body::before {
     background-size: 10vw 10vw;
