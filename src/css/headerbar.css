@@ -37,6 +37,11 @@ header h1.mobile-brand-name {
   font-weight: 1000;
 }
 
+nav ul,
+nav li {
+  padding-left: 0;
+}
+
 nav li {
   list-style: none;
 }

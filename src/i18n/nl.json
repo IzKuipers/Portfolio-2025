@@ -5,10 +5,7 @@
     "hero": {
       "top": "Hoi!$ Ik ben ",
       "name": "Izaak",
-      "bottom": {
-        "text": "En deze plek is alles ",
-        "link": "over mij"
-      }
+      "bottom": "En deze site is alles over mij"
     }
   },
   "about": {

@@ -4,11 +4,8 @@
     "_name": "Home",
     "hero": {
       "top": "Hi!$ I'm ",
-      "name": "Izaak Kuipers",
-      "bottom": {
-        "text": "And this place is all ",
-        "link": "about me"
-      }
+      "name": "Izaak",
+      "bottom": "And this place is all about me"
     },
     "footer": "Made with ❤️ by&nbsp;"
   },

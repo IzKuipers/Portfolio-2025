@@ -24,12 +24,9 @@
     </h1>
     <p class="subtitle">
       <ProgressiveWriter
-        text={[
-          $_("home.hero.bottom.text"),
-          { href: "/about", text: $_("home.hero.bottom.link") },
-        ]}
+        text={[$_("home.hero.bottom")]}
         speed={40}
-        delay={2800}
+        delay={2000}
       />
     </p>
   </div>
