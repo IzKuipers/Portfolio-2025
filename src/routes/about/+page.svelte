@@ -39,11 +39,15 @@
   <div class="skills">
     <div class="skill">
       <h3 class="title">{$_("about.skills.frontend")}</h3>
-      <p class="content">HTML, CSS, JS, TS, Svelte, PHP</p>
+      <p class="content">HTML, CSS, JS, TS, Svelte</p>
     </div>
     <div class="skill">
       <h3 class="title">{$_("about.skills.backend")}</h3>
-      <p class="content">NodeJS, MongoDB, SQL, SvelteKit, C#, Go</p>
+      <p class="content">NodeJS, MongoDB, SQL, C#, Go</p>
+    </div>
+    <div class="skill">
+      <h3 class="title">{$_("about.skills.fullstack")}</h3>
+      <p class="content">PHP, SvelteKit</p>
     </div>
     <div class="skill">
       <h3 class="title">{$_("about.skills.summary")}</h3>
