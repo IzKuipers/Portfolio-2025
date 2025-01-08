@@ -33,6 +33,6 @@
   <footer>
     &copy;&nbsp;
     <a href="https://github.com/IzKuipers" target="_blank">{$_("me")}</a>
-    &nbsp;2024
+    &nbsp;2025
   </footer>
 </div>
