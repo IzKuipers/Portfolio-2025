@@ -78,7 +78,7 @@ This frontend makes use of [nodemailer](https://npm.io/package/nodemailer) to al
 
 1. Make a copy of `mailer.example.config.json` as `mailer.config.json` and open it in your favourite text editor.
 2. Replace the value of `user` with your Gmail email address (Gmail is what I use, so that's what I made the mailer point to)
-3. Replace the value of `pass` with an App Password for your Google account which you can create [here](myaccount.google.com/apppasswords). Do note that you must have 2FA enabled on your google account for this page to be available to you. It's also very possible that Google will bug out and refuse to give you a password, I've seen it happen.
+3. Replace the value of `pass` with an App Password for your Google account which you can create [here](https://myaccount.google.com/apppasswords). Do note that you must have 2FA enabled on your google account for this page to be available to you. It's also very possible that Google will bug out and refuse to give you a password, I've seen it happen.
 4. Start the frontend, go to the Contact Me page, and see if it works!
 
 ## Author
