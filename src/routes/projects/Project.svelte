@@ -28,10 +28,13 @@
   });
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
   class="project"
   style="--background: url({project.image}); {coloredCss}"
   class:colored={!!project.color}
+  on:click={() => (location.href = `/projects/details/${i}`)}
 >
   <div class="info">
     <h1>

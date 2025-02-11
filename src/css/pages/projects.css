@@ -13,6 +13,14 @@ div.page.new-projects div.project a {
   text-decoration: none;
 }
 
+div.page.new-projects div.project:hover {
+  filter: brightness(1.2);
+}
+
+div.page.new-projects div.project:active {
+  filter: brightness(0.9);
+}
+
 div.page.new-projects > h1 {
   color: var(--accent);
   margin-bottom: 20px;
@@ -56,6 +64,7 @@ div.page.new-projects div.project {
   padding: 25px;
   outline: #fff2 2px solid !important;
   margin-bottom: 30px;
+  transition: filter 0.3s;
 }
 
 div.page.new-projects div.project div.info > h1 {
