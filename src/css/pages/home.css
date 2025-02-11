@@ -20,12 +20,16 @@ div.page.home footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.4;
   margin-top: 30px;
 }
 
 div.page.home footer * {
   vertical-align: middle;
+}
+
+div.page.home footer a.icon-github {
+  font-size: 24px;
+  text-decoration: none;
 }
 
 div.page.home svg.animated-logo {

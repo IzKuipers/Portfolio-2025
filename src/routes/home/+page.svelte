@@ -31,8 +31,12 @@
     </p>
   </div>
   <footer>
-    &copy;&nbsp;
-    <a href="https://github.com/IzKuipers" target="_blank">{$_("me")}</a>
-    &nbsp;2025
+    &copy; {$_("me")} 2025 &mdash;&nbsp;
+    <a
+      href="https://github.com/IzKuipers"
+      class="lucide icon-github"
+      aria-label="GitHub"
+      title="GitHub"
+    ></a>
   </footer>
 </div>
