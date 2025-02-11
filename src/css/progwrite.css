@@ -37,3 +37,9 @@ div.hidden {
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 800px) {
+  span.progressive-writer.blinker:has(span)::after {
+    display: none;
+  }
+}
