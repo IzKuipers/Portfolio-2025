@@ -1,18 +1,16 @@
 import ArcOS from "../../assets/arcos.png";
 import CanvasScript from "../../assets/canvasscript.png";
-import Donut from "../../assets/donut.png";
+import HackathonAward from "../../assets/dph24award.jpg";
 import Inepta from "../../assets/inepta.png";
 import InsType from "../../assets/instype.png";
 import Sacruda from "../../assets/sacruda.png";
 import vTDx from "../../assets/vtdx.png";
-import HackathonAward from "../../assets/dph24award.jpg";
 import type { Project } from "../../types/projects";
 
 export const Projects: Project[] = [
   {
     name: "ArcOS",
     codeUrl: "https://github.com/IzK-ArcOS",
-    discontinued: true,
     description: "projects.arcos.description",
     date: "2020-05-17",
     image: ArcOS,
@@ -32,7 +30,6 @@ export const Projects: Project[] = [
   {
     name: "Digital Proof Hackathon",
     codeUrl: "https://github.com/Hackatjon-v2",
-    discontinued: true,
     description: "projects.hackathon-24.description",
     date: "2024-12-03",
     image: HackathonAward,
@@ -76,14 +73,7 @@ export const Projects: Project[] = [
     description: "projects.canvasscript.description",
     date: "2023-05-29",
     image: CanvasScript,
+    discontinued: true,
     longDescription: "projects.canvasscript.longDescription",
-  },
-  {
-    name: "Donut.c-TS",
-    codeUrl: "https://github.com/IzKuipers/Donut.c-TS",
-    description: "projects.donut.description",
-    date: "2023-04-13",
-    image: Donut,
-    longDescription: "projects.donut.longDescription",
   },
 ];
