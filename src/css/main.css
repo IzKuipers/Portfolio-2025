@@ -84,6 +84,22 @@ ul li {
   padding-left: 10px;
 }
 
+body:has(a:hover) div.mouse-glow,
+body:has(button:hover) div.mouse-glow {
+  scale: 10%;
+  opacity: 0.3;
+  background-color: var(--bg);
+  background: none;
+  border: var(--accent) 40px solid !important;
+  border-radius: 50%;
+}
+
+body:has(a:hover:active) div.mouse-glow,
+body:has(button:hover:active) div.mouse-glow {
+  opacity: 1;
+  scale: 8%;
+}
+
 @media screen and (max-width: 600px) {
   body::before {
     background-size: 10vw 10vw;

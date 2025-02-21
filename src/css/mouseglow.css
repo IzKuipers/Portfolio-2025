@@ -12,6 +12,8 @@ div.mouse-glow {
   z-index: -1;
   pointer-events: none;
   display: none;
+  transition: all 0.3s, opacity 0.2s, top 0s, left 0s;
+  border-radius: 50%;
 }
 
 div.mouse-glow.show {
