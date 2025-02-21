@@ -2,10 +2,7 @@
   export let language: string;
 
   function set(language: string) {
-    localStorage.setItem("locale", language);
-    setTimeout(() => {
-      location.reload();
-    });
+    location.href = `/${language}${location.pathname}`;
   }
 
   const body = document.querySelector("body");
@@ -15,8 +12,10 @@
   <button on:click={() => set("en")} class:selected={language === "en"}
     >EN</button
   >
-  <button on:click={() => {body?.classList.toggle("custom")}}
-    ><span>/</span></button
+  <button
+    on:click={() => {
+      body?.classList.toggle("custom");
+    }}><span>/</span></button
   >
   <button on:click={() => set("nl")} class:selected={language === "nl"}
     >NL</button

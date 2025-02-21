@@ -1,7 +1,9 @@
 <script lang="ts">
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import dayjs from "dayjs";
+  import { onMount } from "svelte";
   import { _ } from "svelte-i18n";
+  import SvelteMarkdown from "svelte-markdown";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -17,7 +19,14 @@
       discontinued,
     },
     id,
+    dutchMarkdown,
+    englishMarkdown,
   } = data;
+  let chosenLocale: string;
+
+  onMount(() => {
+    chosenLocale = localStorage.getItem("locale") || "en";
+  });
 </script>
 
 <svelte:head>
@@ -78,9 +87,13 @@
         {$_("projects.discontinuedNotice")}
       </p>
     {/if}
-    <p>
-      {@html $_(longDescription)}
-    </p>
+    <div class="description">
+      {#if chosenLocale === "nl"}
+        <SvelteMarkdown source={dutchMarkdown} />
+      {:else}
+        <SvelteMarkdown source={englishMarkdown} />
+      {/if}
+    </div>
     {#if htmlUrl || codeUrl}
       <div class="links">
         {#if htmlUrl}

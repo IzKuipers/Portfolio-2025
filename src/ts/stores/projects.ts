@@ -16,6 +16,7 @@ export const Projects: Project[] = [
     image: ArcOS,
     longDescription: "projects.arcos.longDescription",
     color: "#4db0ff",
+    id: "arcos",
   },
   {
     name: "Sacruda",
@@ -26,6 +27,7 @@ export const Projects: Project[] = [
     image: Sacruda,
     longDescription: "projects.sacruda.longDescription",
     color: "#a675e2",
+    id: "sacruda",
   },
   {
     name: "Digital Proof Hackathon",
@@ -34,6 +36,7 @@ export const Projects: Project[] = [
     date: "2024-12-03",
     image: HackathonAward,
     longDescription: "projects.hackathon-24.longDescription",
+    id: "hackathon",
   },
   {
     name: "Inepta",
@@ -44,6 +47,7 @@ export const Projects: Project[] = [
     image: Inepta,
     longDescription: "projects.inepta.longDescription",
     color: "rgb(255, 152, 88)",
+    id: "inepta",
   },
   {
     name: "InsType",
@@ -54,6 +58,7 @@ export const Projects: Project[] = [
     image: InsType,
     longDescription: "projects.instype.longDescription",
     color: "#ffbb32",
+    id: "instype",
   },
   {
     name: "vTDx",
@@ -65,6 +70,7 @@ export const Projects: Project[] = [
     longDescription: "projects.vtdx.longDescription",
     discontinued: true,
     color: "#61afef",
+    id: "vtdx",
   },
   {
     name: "CanvasScript",
@@ -75,5 +81,6 @@ export const Projects: Project[] = [
     image: CanvasScript,
     discontinued: true,
     longDescription: "projects.canvasscript.longDescription",
+    id: "canvasscript",
   },
 ];

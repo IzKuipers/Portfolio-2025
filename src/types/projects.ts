@@ -8,4 +8,5 @@ export interface Project {
   longDescription: string;
   image: string;
   color?: string;
+  id: string;
 }

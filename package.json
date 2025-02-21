@@ -21,10 +21,12 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-node": "^5.2.5",
+		"@types/node": "^22.13.4",
 		"@types/nodemailer": "^6.4.16",
 		"colorsea": "^1.2.2",
 		"dayjs": "^1.11.13",
 		"nodemailer": "^6.9.15",
-		"svelte-i18n": "^4.0.0"
+		"svelte-i18n": "^4.0.0",
+		"svelte-markdown": "^0.4.1"
 	}
 }
