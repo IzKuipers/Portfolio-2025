@@ -1,0 +1,28 @@
+div.page.workshop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+}
+
+div.page.workshop canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main:has(.page.workshop) div.mouse-glow.show {
+  z-index: 10000;
+}
+
+div.page.workshop::after {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  content: "P5.js";
+  opacity: 0.5;
+  font-size: var(--medium-text-size);
+}

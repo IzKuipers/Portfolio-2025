@@ -10,7 +10,7 @@
   --bg-gradient: linear-gradient(to bottom, var(--bg) 0%, #05141f 100%);
   --fg: #d6ecff;
   --grayed: #ffffff1a;
-  --accent: #61b8ff;
+  --accent: rgb(97, 184, 255);
   --red: #ff6738;
 }
 
@@ -35,5 +35,6 @@
 }
 
 * {
-  transition: color 0.05s, background-color 0.2s, fill 0.2s, scale 0.2s, filter 0.2s;
+  transition: color 0.05s, background-color 0.2s, fill 0.2s, scale 0.2s,
+    filter 0.2s;
 }

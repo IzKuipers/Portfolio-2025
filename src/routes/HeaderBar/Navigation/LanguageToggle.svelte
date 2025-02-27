@@ -2,7 +2,10 @@
   export let language: string;
 
   function set(language: string) {
-    location.href = `/${language}${location.pathname}`;
+    localStorage.setItem("locale", language);
+    setTimeout(() => {
+      location.reload();
+    });
   }
 
   const body = document.querySelector("body");
