@@ -85,6 +85,11 @@
         "title": "Oh no!",
         "text": "Failed to send your message!$$ Please try again later."
       }
+    },
+    "cv": {
+      "header": "My Resume",
+      "open": "Download Resume",
+      "link": "/cv-izkuipers-en.pdf"
     }
   }
 }

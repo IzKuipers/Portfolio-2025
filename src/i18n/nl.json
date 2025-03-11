@@ -84,6 +84,11 @@
         "title": "Oh nee!",
         "text": "Kon jouw e-mail niet versturen! Probeer het later opnieuw."
       }
+    },
+    "cv": {
+      "header": "Mijn CV",
+      "open": "CV Downloaden",
+      "link": "/cv-izkuipers-nl.pdf"
     }
   }
 }

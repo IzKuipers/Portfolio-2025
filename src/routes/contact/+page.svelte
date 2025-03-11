@@ -54,6 +54,12 @@
           <a href="https://discord.com/users/656469722526908427">@izkuipers</a>
         </p>
       </section>
+      <section>
+        <SectionHeader t={$_("contact.cv.header")} />
+        <p>
+          <a href={$_("contact.cv.link")}>{$_("contact.cv.open")}</a>
+        </p>
+      </section>
     </div>
   </div>
   <div class="direct">
