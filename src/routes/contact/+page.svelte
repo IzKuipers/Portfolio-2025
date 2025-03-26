@@ -57,7 +57,7 @@
       <section>
         <SectionHeader t={$_("contact.cv.header")} />
         <p>
-          <a href={$_("contact.cv.link")}>{$_("contact.cv.open")}</a>
+          <a href="/resume-izkuipers.pdf">{$_("contact.cv.open")}</a>
         </p>
       </section>
     </div>

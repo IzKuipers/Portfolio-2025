@@ -92,8 +92,7 @@
     },
     "cv": {
       "header": "My Resume",
-      "open": "Download Resume",
-      "link": "/cv-izkuipers-en.pdf"
+      "open": "Download Resume"
     }
   }
 }
