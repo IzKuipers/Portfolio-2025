@@ -83,6 +83,10 @@
       "failed": {
         "title": "Oh nee!",
         "text": "Kon jouw e-mail niet versturen! Probeer het later opnieuw."
+      },
+      "limited": {
+        "title": "Wacht eens!",
+        "text": "Ik heb al vijf e-mails ontvangen vanuit dit IP-adres in het afgelopen uur. Probeer het later opnieuw."
       }
     },
     "cv": {

@@ -84,6 +84,10 @@
       "failed": {
         "title": "Oh no!",
         "text": "Failed to send your message!$$ Please try again later."
+      },
+      "limited": {
+        "title": "Hold up!",
+        "text": "I've already received five emails from this IP address in the last hour. Try again later."
       }
     },
     "cv": {
