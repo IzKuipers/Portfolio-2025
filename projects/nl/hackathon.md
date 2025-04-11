@@ -8,7 +8,7 @@ Deze editie van de Digital Proof Hackathon was mogelijk gemaakt door De Digitale
 
 Ons team, **Hackatjon-v2**, bestond uit mij en deze geweldige personen:
 
-- [@luvbxgs](https://github.com/luvbxgs)
+- [@wiamsudo](https://github.com/wiamsudo)
 - [@Zyggzzz](https://github.com/Zyggzzz)
 - [@TiesOnKip](https://github.com/TiesOnKip)
 

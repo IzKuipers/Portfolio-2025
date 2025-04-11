@@ -8,7 +8,7 @@ This edition of the Digital Proof Hackathon was made possible by De Digitale Wer
 
 Our team, **Hackatjon-v2**, consisted of me and these amazing individuals:
 
-- [@luvbxgs](https://github.com/luvbxgs)
+- [@wiamsudo](https://github.com/wiamsudo)
 - [@Zyggzzz](https://github.com/Zyggzzz)
 - [@TiesOnKip](https://github.com/TiesOnKip)
 
