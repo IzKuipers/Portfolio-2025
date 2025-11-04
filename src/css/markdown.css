@@ -1,0 +1,30 @@
+div.markdown-renderer h2,
+div.markdown-renderer h3,
+div.markdown-renderer h4,
+div.markdown-renderer h5,
+div.markdown-renderer h6 {
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+div.markdown-renderer p,
+div.markdown-renderer ul {
+  margin-bottom: 30px;
+}
+
+div.markdown-renderer {
+  line-height: 30px;
+}
+
+div.markdown-renderer h1 {
+  font-size: var(--medium-header);
+  margin-bottom: 20px;
+  color: var(--accent);
+  margin-top: 0;
+}
+
+hr {
+  margin: 20px 0 !important;
+
+  border: var(--grayed) 1px solid;
+}

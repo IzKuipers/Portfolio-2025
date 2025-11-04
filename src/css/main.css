@@ -8,6 +8,7 @@
 @import url("./headerbar.css");
 @import url("./mouseglow.css");
 @import url("./progwrite.css");
+@import url("./markdown.css");
 
 * {
   box-sizing: border-box;

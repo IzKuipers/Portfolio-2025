@@ -112,35 +112,13 @@ div.page.project-details div.breadcrumbs span + span::before {
   opacity: 0.5;
 }
 
-div.page.project-details div.main-content div.links {
+div.markdown-renderer div.links {
   margin-top: 30px;
 }
 
 div.page.project-details p.more {
   margin-top: 30px;
   margin-bottom: 60px;
-}
-
-div.page.project-details div.main-content {
-  line-height: 30px;
-}
-
-div.page.project-details div.main-content h1 {
-  font-size: var(--medium-header);
-  margin-bottom: 20px;
-  color: var(--accent);
-  margin-top: 0;
-}
-
-div.page.project-details div.main-content p,
-div.page.project-details div.main-content ul {
-  margin-bottom: 20px;
-}
-
-div.page.project-details hr {
-  margin: 20px 0 !important;
-
-  border: var(--grayed) 1px solid;
 }
 
 @media screen and (max-width: 820px) {
@@ -166,7 +144,7 @@ div.page.project-details hr {
     height: calc(100% - 92px);
   }
 
-  div.page.project-details div.main-content {
+  div.markdown-renderer {
     padding: 20px;
   }
 

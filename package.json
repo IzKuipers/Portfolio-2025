@@ -24,6 +24,7 @@
 		"@types/node": "^22.13.4",
 		"@types/nodemailer": "^6.4.16",
 		"@types/p5": "^1.7.6",
+		"axios": "^1.13.2",
 		"colorsea": "^1.2.2",
 		"dayjs": "^1.11.13",
 		"nodemailer": "^6.9.15",
