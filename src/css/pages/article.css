@@ -1,0 +1,45 @@
+div.page.article {
+  padding-top: 60px;
+}
+
+div.page.article > * {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+div.page.article > h1 {
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: var(--large-header);
+}
+
+div.page.article > h2,
+div.page.article > h3,
+div.page.article > h4,
+div.page.article > h5,
+div.page.article > h6 {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+div.page.article > p {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+div.page.article div.markdown-renderer {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  div.page.article {
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  div.page.article > * {
+    width: 100%;
+  }
+}

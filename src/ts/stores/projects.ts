@@ -11,7 +11,7 @@ export const Projects: Project[] = [
   {
     name: "ArcOS",
     codeUrl: "https://github.com/IzK-ArcOS",
-    htmlUrl: "https://izk-arcos.nl/",
+    htmlUrl: "https://arcweb.nl/",
     description: "projects.arcos.description",
     date: "2020-05-17",
     image: ArcOS,

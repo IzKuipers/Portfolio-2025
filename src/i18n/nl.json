@@ -97,5 +97,11 @@
       "header": "Mijn CV",
       "open": "CV Downloaden"
     }
+  },
+  "blog": {
+    "_name": "Blog",
+    "intro": "Ik hou van praten, hier zijn mijn verhalen. Het is zo simpel als dat. Het gaat hier over wat ik beleef, wat ik maak, alles wat er tot doet.",
+    "posts": "Mijn Posts",
+    "back": "Terug naar blog"
   }
 }

@@ -98,5 +98,11 @@
       "header": "My Resume",
       "open": "Download Resume"
     }
+  },
+  "blog": {
+    "_name": "Blog",
+    "intro": "I love talking, here are my stories. It's as simple as that. This page contains what I experience, what I create, everything that matters.",
+    "posts": "My Posts",
+    "back": "Back to blog"
   }
 }

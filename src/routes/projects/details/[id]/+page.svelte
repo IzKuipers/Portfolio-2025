@@ -75,7 +75,7 @@
       </div>
     {/if}
   </div>
-  <div class="main-content">
+  <div class="markdown-renderer">
     <div class="breadcrumbs">
       <span><a href="/home">Home</a></span>
       <span><a href="/projects">{$_("projects._name")}</a></span>

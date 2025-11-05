@@ -12,7 +12,7 @@
   <div class="arcos-notice">
     <img src="https://cdn.arcapi.nl/branding/v7/logo.svg" alt="">
     <p>{$_("home.arc5y.notice")}</p>
-    <a href="/arc5y">{$_("home.arc5y.link")}</a>
+    <a href="/blog/2025/11/4/arcos-5y">{$_("home.arc5y.link")}</a>
   </div>
   <div class="hero">
     <AnimatedLogo />
