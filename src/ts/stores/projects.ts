@@ -13,7 +13,7 @@ export const Projects: Project[] = [
     codeUrl: "https://github.com/IzK-ArcOS",
     htmlUrl: "https://arcweb.nl/",
     description: "projects.arcos.description",
-    date: "2020-05-17",
+    date: "2020-11-04",
     image: ArcOS,
     longDescription: "projects.arcos.longDescription",
     color: "#4db0ff",
