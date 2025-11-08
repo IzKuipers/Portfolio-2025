@@ -1,0 +1,32 @@
+div.page.blog-overview ul li {
+  padding: 10px;
+}
+
+div.page.blog-overview ul li > div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+div.page.blog-overview ul li > div span.dash {
+    margin-left:auto;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+    div.page.blog-overview ul li > div {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    div.page.blog-overview ul li > div span.date {
+        opacity: 0.5;
+    }
+
+    div.page.blog-overview ul li > div span.dash {
+        display:none;
+    }
+}

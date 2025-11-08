@@ -14,15 +14,17 @@
   <ul>
     {#each data.posts as { date, name, displayName } (`${Object.values(date).join("-")}-${name}`)}
       <li>
-        <a href="/blog/{date.year}/{date.month}/{date.day}/{name}">
-          {displayName}
-        </a>
-        <span>
-            &mdash;
-          {dayjs(`${date.year}-${date.month}-${date.day}`).format(
-            "D MMMM YYYY"
-          )}
-        </span>
+        <div>
+          <a href="/blog/{date.year}/{date.month}/{date.day}/{name}">
+            {displayName}
+          </a>
+          <span class="dash">&mdash;</span>
+          <span class="date">
+            {dayjs(`${date.year}-${date.month}-${date.day}`).format(
+              "D MMMM YYYY"
+            )}
+          </span>
+        </div>
       </li>
     {/each}
   </ul>
