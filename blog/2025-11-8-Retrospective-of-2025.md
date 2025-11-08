@@ -1,7 +1,5 @@
 # Looking back at 2025
 
-> _NOTE:_ ArcOS does NOT yet have support for multiple languages. It's a constant process of translating every string of text in the OS with a translation string, so it's taking a very long time. The branch, `izk-test-i18n-implementation`, won't be merged into `main` for another couple months.
-
 With the year almost coming to an end, I felt it's time to take a good look at what has been accomplished this year, what I've learned, and what I'm planning for 2026.
 
 ## The main focus
@@ -48,6 +46,7 @@ For ArcOS v7, I've been building my own custom translation engine for adding mul
 
 A major downside of translating stuff like Sacruda and this very portfolio you're on right now is that the Svelte code becomes inherently less readable because you've got all that `{$_("")}` guff all over the place. My approach minimalizes the extra characters by just using JSON hierarchy strings (as I call them) surrounded by percent symbols.
 
+> _NOTE:_ ArcOS does NOT yet have support for multiple languages. It's a constant process of translating every string of text in the OS with a translation string, so it's taking a very long time. The branch, `izk-test-i18n-implementation`, won't be merged into `main` for another couple months.
 
 ## Node package
 
