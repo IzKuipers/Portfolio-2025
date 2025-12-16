@@ -6,6 +6,7 @@
 @import url("./pages/contact.css");
 @import url("./pages/workshop.css");
 @import url("./pages/article.css");
+@import url("./pages/blog.css");
 
 div.page {
   width: 100%;
