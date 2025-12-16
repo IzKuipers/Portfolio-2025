@@ -9,11 +9,6 @@
 </svelte:head>
 
 <div class="page home">
-  <div class="arcos-notice">
-    <img src="https://cdn.arcapi.nl/branding/v7/logo.svg" alt="">
-    <p>{$_("home.arc5y.notice")}</p>
-    <a href="/blog/2025/11/4/ArcOS-5-years-old">{$_("home.arc5y.link")}</a>
-  </div>
   <div class="hero">
     <AnimatedLogo />
     <h1>
