@@ -10,7 +10,7 @@
   let showMobileNav = false;
 
   onMount(() => {
-    const query = window.matchMedia("(max-width: 820px)");
+    const query = window.matchMedia("(max-width: 900px)");
 
     query.addEventListener("change", (e) => {
       showMobileNav = e.matches;

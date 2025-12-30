@@ -13,7 +13,7 @@
       y = e.clientY;
     });
 
-    const query = window.matchMedia("(min-width: 820px)");
+    const query = window.matchMedia("(min-width: 900px)");
 
     query.addEventListener("change", (e) => {
       render = e.matches;
