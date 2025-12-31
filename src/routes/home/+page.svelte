@@ -2,6 +2,7 @@
   import ProgressiveWriter from "$lib/ProgressiveWriter.svelte";
   import { _ } from "svelte-i18n";
   import AnimatedLogo from "./AnimatedLogo.svelte";
+  import dayjs from "dayjs";
 </script>
 
 <svelte:head>
@@ -32,7 +33,7 @@
   </div>
   <footer>
     <div class="copyright">
-      &copy; {$_("me")} 2025 &mdash;&nbsp;
+      &copy; {$_("me")} {dayjs().format("YYYY")} &mdash;&nbsp;
       <a
         href="https://github.com/IzKuipers"
         class="lucide icon-github"
