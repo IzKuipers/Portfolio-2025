@@ -1,0 +1,39 @@
+- Fixed a problem with the refreshing of themes and wallpapers in the Settings app
+- Removed `TestApp`: the oldest v7 app
+- Fixed a bug that made the app store think verified apps were still unverified because of caching
+- Added a progress indicator to trash emptying
+- Removed the waiting, working and error indicators from FsProgress
+- Created `DriveInfo`: A better dialog for viewing information about a drive. This dialog also displays categorized drive usage for U:/
+- Added `FsProgressFail`: A proper dialog for displaying file transfer errors in a more permanent manner.
+- `FileAssocSvc`: file associations are now saved to the ArcOS filesystem in `U:/System/FileAssociations.json`
+- There have been many reports of ArcOS files not having the correct file type displayed in the file manager. This has now been resolved. If a file still isn't recognized by fileAssocSvc, it'll show up as Unknown.
+- The 'Report a bug' link in Advanced System Settings now works
+- Added `UpdateNotifierApp`: a windows that neatly notifies you about a new version of ArcOS, it also allows you to view the change log from within the OS without having to open Discord or the Documentation Site.
+- The spin-ups of several filesystem drives have been optimized to improve performance
+- Added a better home page "popular" section to the app store
+- Updated the store page carousel to improve readability and appearance
+- Fixed a crash related to the ArcOS protocol handler (bug 68a344836c65fe520ebfba59)
+- Fullscreen, minimized windows are now accounted for and will no longer keep the taskbar hidden
+- Added a STAT drive capability to more quickly get summarized information about a file or folder
+- Fixed some more CSS bugs as a result of 7.0.3 (yes, these keep coming)
+- Added a "pin to taskbar" notification to new and updated apps
+- Fixed a problem with the Compose button in Messages
+- ArcFind now has a dedicated loading state to indicate the initial indexing phase on login. It will also no longer send repeated requests to the server as a result of keystrokes.
+- The Load/save dialog now automatically has the extension appended to the filename for saving
+- The login routine has been optimized to log you in even faster
+- U:/Applications is now a hidden `UserPath`, it will no longer show up on the My ArcOS page.
+- ArcOS windows now better account for a no-shell scenario.
+- The ArcOS crashes related to the context menus have been mitigated (hopefully for real this time)
+- The kernel reference has been removed from all processes, kernel modules, services and components to enhance the crippling TPA security.
+- Cod and Writer have received several bug fixes
+- The file manager now has a correct window title for virtual folders (My ArcOS, Recycle Bin)
+- Added a dedicated loading state to the desktop to better indicate refreshing
+- Added a block that prevents you from starting two file manager navigations at once
+- Stack traces and application errors are now better displayed using `OopsNotifier` and `OopsStackTracer`.
+- Fix a bug where installed apps had no uninstall button in the app store
+- Added the new TOTP field to `TotpSetupGui` also
+- Fix several app opening bugs in safe mode
+
+---
+
+August 26th 2025, 11:02

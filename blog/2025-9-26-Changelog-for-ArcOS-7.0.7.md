@@ -1,0 +1,52 @@
+# ArcOS 7.0.7 (0b530289)
+
+- I've begun adding SQLite support into ArcOS
+- Added image thumbnails
+- Added a view menu to the file manager
+- Fixed some bugs related to file progresses in various apps
+- The alt menu will no longer close and then reopen on click if it's already opened
+- Fixed a problem with the arcfetch build number
+- Massive codebase refactors
+- Added an info pane to the file manager
+- Added several animations
+- Bug reporting has been improved to more easily solve bugs and prevent crashes
+- App store: fixed a bug that wrongfully displayed the blocked state in ManageStoreItem
+- Moved Cod to the Utilities app group
+- Fixed some overflow problems in the bottom bar of the file manager
+- Added SQL syntax highlighting to Cod
+- Improved kernel module integrity checking
+- Improved error handling in ArcOS: app crashes should now crash ArcOS way less
+- Added a more direct way of adding context menus to built-in apps
+- The versions of several external dependencies have been fixated to improve compatibility
+- Added nightly: a locked-down build of ArcOS that compiles at midnight: https://v7.izkuipers.nl/nightly
+- We've been gradually improving the security of ArcOS, now restricting access to the process handler in certain system components.
+- Built-in apps are now all loaded dynamically and on the fly to increase load speeds and decrease bulk unused code
+- App info now shows more in-depth information about first-party (aka built-in) applications
+- Improved the caching of app data to make ArcOS app resolution faster
+- Security settings: added a toggle for the restricting of changes to system folders
+- Fixed some bugs related to the Trash Can
+- Added process info which shows in-depth info of any process
+- Made the login routine more user friendly by hiding verbose login messages by default. These can be turned on from Advanced System Settings
+- The shutdown/restart/logoff screens now match your ArcOS accent color
+- ArcTerm has also seen several bug fixes
+- Fixed several bugs related to file associations, including a bug where file associations were empty for new user accounts
+- Oops notifier now spawns the oops stack tracer as an overlay instead of just a headless window
+- All icons in ArcOS are now dynamic! You can swap out ArcOS' icons with whatever icons you want using the new **Icon Editor** application.
+- Ported the services GUI from ArcOS v6 to v7! It's been added to the Process Manager.
+- Improved the UI of several system components to match the redesign of ArcOS 7.0.3.
+- The blur of ArcOS glass surfaces can now be changed dynamically from the settings app. (@logangamesdaily)
+- The not-running error message for the trash can virtual page is now properly styled. (@allucat1000)
+- You can now move a window between workspaces from the titlebar context menu
+- Several load operations have been sped up using Promise.all
+- Fixed the desktop icons not properly positioning themselves and generally behaving buggy (@oAnblu)
+- You can now show or hide hidden drives and virtual locations in the file manager (@allucat1000)
+- You'll now be asked if you want to _open_ a hidden app upon installation instead of being asked to pin it to the taskbar (@allucat1000)
+- Removed the Reset desktop icon positions option from the desktop because it did not work properly and could not be fixed in time
+- Fixed the formatting of various secure contexts around ArcOS (@oAnblu)
+- The Manage Apps settings slide now shows the small grid mode by default (@allucat1000)
+- The search bars of the messages app and app store are now the same (@oAnblu)
+- Re-added the intro text to ArcTerm (@izkuipers, @allucat1000)
+- The app store now has a dedicated page for ArcOS users
+- Fixed several bugs submitted by our users
+
+ArcOS 7.0.7 has been deployed to the servers on September 26th 2025 at 11:07 PM, counting 2145 modules.

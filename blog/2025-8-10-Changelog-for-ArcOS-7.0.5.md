@@ -1,0 +1,53 @@
+- Improved error handling of third-party apps some more: the stack will no longer get stuck when an exception occured
+- Added better error handling to ArcFind
+- ArcFind now only searches in the Home folder, not your entire filesystem
+- The three dots that show up when loading ArcOS now indicate the phase of the loading process: 1 = DOM load, 2 = preboot, 3 = state handler
+- You'll no longer be able to install unverified packages as a measure to improve security
+- Contrast in the app store has been improved
+- Fixed overflow and wrapping problems in several applications
+- Changed the token lifetime from 2 to 14 days
+- ArcOS 7.0.5 comes with a large amount of visual improvements: many UI components have been partially redesigned to further modernize the ArcOS experience
+- The app store will no longer load whilst in safe mode
+- You'll now be notified of unread messages when you're logged in. Unread messages are now also more clearly indicated in the Messages app.
+- Fix a problem with URL caching in third-party app processes
+- Added drive capabilities to clearly indicate to ArcOS components what a drive can do
+- Every filesystem operation in ArcOS is now try/catched to prevent unwanted crashes
+- You can now copy and move files between drives! This functionality is early-stages, so files may fail to transfer, please keep in mind.
+- The UI for file operations has been improved to more clearly indicate what's happening
+- Fixed a bug where logging off, restarting or shutting down would cause hangs and crashes
+- Fixed several bug reports related to context menus, ArcTerm, and other components
+- Improve the UX of the 2FA prompt on the login screen, and the 2FA setup prompt
+- All built-in processes now have manually assigned names to make them human-readable
+- Refined the UI in the Initial Setup Wizard and the login screen
+- Added First Run: this is a dialog that appears when the user logs into a new account for the first time
+- The app store will now tell you immediately when third-party apps are disabled
+- ArcOS will now wait for the login routine to finish before allowing requests to leave the desktop to be executed
+- `globalLoadIndicator` has been changed to always be invocable
+- You can now actually delete your account from the settings app
+- "full name" has been changed to "display name" in the initial setup wizard
+- AdvSystemSettings can now only run once at a time
+- Please welcome wallpaper 37 from Allucat1000: Italian Bliss
+- The folder icon has been changed to a beige/yellow color
+- The default taskbar pins have been changed to: File Manager, Messages, App Store, System Settings, Processes
+- The default accent color of ArcOS has been changed to #FF6E54
+- Added the Recycle Bin: files and folders that you delete from your drive will make their way to the recycle bin, instead of being deleted immediately. Go to the Recycling tab of Advanced System Settings to change this behaviour.
+- The filesystem layout has been changed again to add a System folder, which contains app configuration files and the recycle bin, among other things.
+- Restrictions have been put in place to prevent you from deleting system folders/files easily from the File Manager
+- New ArcOS users receive several shortcuts on the desktop for the recycle bin, My ArcOS, My Documents and the App Store.
+- Activated Alternative Menus in all apps are now indicated with a highlight
+- The file manager will now properly acknowledge read-only filesystems
+- Re-added partial support for ZIP files: you can now open ZIP archives as readonly drives, so that you can look at the files.
+- Fixed some file reading bugs in the writer, image viewer and PDF viewer.
+- Fixed a number of overflow problems in the file manager, start menu and app store
+- Added a file handler for `.arctheme` files, allowing you to apply the themes you exported
+- Advanced System Settings now has a Main page that tells you about your account, and ArcOS' systems.
+- Several API endpoints have been optimized to improve response times and reduce unnecessary server load: ArcOS should now boot even faster.
+- Added `UserPaths`, `UserPathCaptions`, `UserPathIcons`, `SystemFolders` and `HiddenUserPaths` constants to the TPA props (documentation pending)
+- Improved several error messages in the App Store to more properly describe what's going on
+- Updated some components to the UI refresh of 7.0.3
+- Updated the logo of the webmanifest to the 2025 refresh
+- The default number of workspaces is now 3 instead of 1, the first of which being called "Default"
+
+---
+
+August 10th 2025, 10:25 PM
