@@ -1,0 +1,72 @@
+- Lucide has been updated to v0.562.0 (last v0 version)
+- Added a new "recent files" list to the file manager
+- Fixed a bunch of bugs in the file manager
+- Fixed a number of overflow problems in the file manager
+- Made some improvements to the recycling of files
+- You can now seek and choose different view modes in the media player (@blockyheadman)
+- The media player has also received desktop audio playback support; select browsers and operating systems will show the song that's playing on your actual OS' media controls. (@blockyheadman)
+- Added a new pinning option to the fullscreen mode of the media player to keep the media controls and seek bar visible
+- Added several other extensions to the media player that were missing previously (@blockyheadman)
+- Fixed some crashing bugs related to the media player (@logan.games)
+- The invocation of third-party applications has been rewritten from scratch to allow for better error handling and faster code execution.
+- The permission system has been removed to lower the barrier to entry and to bring flexibility to our app devs
+- The DevEnvironment service will now disconnect the socket properly when the service stops
+- We've begun experimenting with typescript support in ArcOS third-party applications (courtesey of @blockyheadman)
+- Added a new `ThirdPartyProcess` which allows you to create a process that does something other than render an application
+- We've completely rewritten the way we generate our type definitions for use in third-party applications. The types will now only include that which is available for you to access.
+- Added experimental support for top-level `import` statements in third-party applications. If your application doesn't work, and you're using this new variant, consider going back to `load` and `loadHtml`.
+- The DevEnvironment service will now ignore the build hash mismatch on the beta branch.
+- The TPA_REV constant has been bumped to 2
+- ArcTerm has received a couple new commands: `base64`, `input`, `soundbus`, `uuid`, `tostr`, `service`, `migrations`, `load`, `basic`
+- ArcTerm flag parsing has been revised to mitigate problems
+- ArcTerm now properly handles shutdowns, logouts and restarts
+- ArcTerm Mode now allows you to choose a server and no longer echoes your password back in plain text (sorry about that)
+- The `drives` command has been rewritten to remove the broken ASCII table
+- The app store has received several bug fixes and improvements
+- The app store now better handles app updates
+- You can now download all of the attachments from a message at once
+- The messages app has received several UI improvements to make better use of the available space.
+- The messages app now better handles deleted users
+- There's a new ArcOS Discord Bot that can do all kinds of fun things like inform you of ArcOS messages when you're offline on ArcOS
+- The system tray loading state is now its own svelte code instead of just being a tray icon in of itself
+- Re-added the accented logo from ArcOS v6: this is a version of the ArcOS logo that matches your accent color. I personally really like it.
+- We've begun converting all server interactions to ServerConnectors which are kernel-level classes that centrally define the endpoints instead of sporadically scattering them across the codebase
+- The codebase has undergone a massive refactor to add typescript interfaces to all classes, and to reorganize the files.
+- Added filesystem proxies which are virtual folders that can contain anything the developer wants
+- Certain server interactions were broken because of a faulty utility function, that has been fixed.
+- Removed the now unused `svelte-navigator` package in favour of native browser APIs
+- Added a generic `ConfigurationBuilder` class to better handle the configuration files of an application
+- Added ArcOS branding for the development and beta branches
+- Fixed an issue with object inheritance, causing some app settings to stick around when logging out and back in
+- Added better error handling across the codebase and server to properly inform you when an error occurs
+- Several migrations have been updated to better handle ArcOS updates
+- Improved the reactivity and presence handling of the IconService
+- Improved the speed and efficiency of several loading routines across the OS
+- The 2FA dialog can now no longer be manipulated using the up/down arrow keys (@allucat1000)
+- Removed `LoginAppRuntime.unexpectedInvocation`
+- The login routine has been rewritten from scratch to allow it to adapt to different environmental requirements.
+- Improved safe mode to make it more... safe?
+- We've moved the Display Name field from the initial setup wizard to a new page in First Run because of a backend limitation
+- The initial setup now has requirement information for the various fields on the My ArcOS Identity page (@blockyheadman)
+- The initial setup now asks you to confirm if the email address you entered is a valid email address. We've noticed a flee of invalid, non-existent email addresses being used for account registration, which makes it so that those accounts can't be activated. Dormant account activations are deleted after 24 hours by an ArcOS administrator.
+- Start menu groups have received a new sliding design to make it easier to distinguish the groups
+- Added an internal API for blinking a taskbar icon: `IAppProcess.blink` (@oAnblu)
+- Added the ArcOS Master Options (Ctrl+Alt+Backspace) -- this is a handy utility that allows you to get out of a potential softlock without having to reload the browser tab.
+- Added toast notifications that can inform you about something without showing an error dialog or push notification. Toast notifications show up at the bottom of a window or just above the taskbar.
+- The action bars at the bottom of various ArcOS applications has been refactored to use a set of generic components instead of duplicating the same CSS for every application.
+- The status bars have also been refactored to use a set of generic components instead of duplicating the same CSS for every application.
+- Fixed a bug related to the global load indicator (can you believe it?)
+- Both Cod and Writer now detect read-only filesystems and act in kind.
+- The image viewer has been revamped and now features zoom/panning controls!
+- Advanced System Settings now uses proper HTML tables instead of look-alikes
+- You will now be warned when saving a theme that uses a local wallpaper to the filesystem because they use paths that wouldn't work on another user's account
+- The theme for the initial setup wizard has been changed to light, and now also uses the accented logo on the welcome page.
+- We've begun rewriting the ArcOS documentation to provide information for both regular users and application developers. The documentation is still incomplete and will see further expansion over the coming months.
+- Added a new "system account" variant that is used by various infrastructural services. The `support` account is one of them.
+- We have a new scripting language! Please welcome ArcBasic to the world of ArcOS. It's a spin of the classic BASIC language from the 80s
+- Fixed some bugs related to the CodeEditor component, used primarily by Cod to render syntax highlighted code.
+- Added additional context menu options to the desktop for cutting, copying and pasting files.
+- We've added more context menus across the OS to improve the user experience.
+- A new game has arrived! Please welcome Minesweeper by @logan.games
+
+> ArcOS 7.0.10 has been deployed to the servers on July 4th 2026, 19:02, counting 3961 modules
