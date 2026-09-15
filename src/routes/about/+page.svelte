@@ -13,7 +13,7 @@
   </h1>
 
   <p>
-    {$_("about.summary")} <a href="https://sacruda.nl">Sacruda</a>.
+    {$_("about.summary")} <a href="https://os.arcweb.nl">ArcOS v7</a>.
   </p>
 
   <h2>
@@ -52,7 +52,7 @@
     <div class="skill">
       <h3 class="title">{$_("about.skills.summary")}</h3>
       <p class="content">
-        C#, Go, HTML, CSS, JS, TS, PHP, SQL, VBA, Rust<span class="grayed"
+        C#, Razor, Go, HTML, CSS, JS, TS, PHP, SQL, VBA, Rust<span class="grayed"
           >*</span
         >, Python<span class="grayed">*</span>, C++<span class="grayed">*</span>
       </p>
