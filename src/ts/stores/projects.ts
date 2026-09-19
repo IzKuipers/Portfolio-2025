@@ -10,8 +10,8 @@ import type { Project } from "../../types/projects";
 export const Projects: Project[] = [
   {
     name: "ArcOS",
-    codeUrl: "https://github.com/IzK-ArcOS",
-    htmlUrl: "https://arcweb.nl/",
+    codeUrl: "https://github.com/ArcOS-Project",
+    htmlUrl: "https://os.arcweb.nl/",
     description: "projects.arcos.description",
     date: "2020-11-04",
     image: ArcOS,
