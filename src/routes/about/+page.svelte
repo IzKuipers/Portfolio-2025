@@ -13,7 +13,7 @@
   </h1>
 
   <p>
-    {$_("about.summary")} <a href="https://os.arcweb.nl">ArcOS v7</a>.
+    {$_("about.summary")} <a href="https://sacruda.nl">Sacruda (ArcOS)</a>.
   </p>
 
   <h2>
