@@ -1,34 +1,34 @@
-import ArcOS from "../../assets/arcos.png";
+import Sacruda from "../../assets/sacruda.png";
 import CanvasScript from "../../assets/canvasscript.png";
 import HackathonAward from "../../assets/dph24award.jpg";
 import Inepta from "../../assets/inepta.png";
 import InsType from "../../assets/instype.png";
-import Sacruda from "../../assets/sacruda.png";
+import Masonville from "../../assets/masonville-project.png";
 import vTDx from "../../assets/vtdx.png";
 import type { Project } from "../../types/projects";
 
 export const Projects: Project[] = [
   {
-    name: "ArcOS",
-    codeUrl: "https://github.com/ArcOS-Project",
-    htmlUrl: "https://os.arcweb.nl/",
-    description: "projects.arcos.description",
-    date: "2020-11-04",
-    image: ArcOS,
-    longDescription: "projects.arcos.longDescription",
-    color: "#4db0ff",
-    id: "arcos",
-  },
-  {
     name: "Sacruda",
-    htmlUrl: "https://sacruda.nl/",
     codeUrl: "https://github.com/Sacruda",
+    htmlUrl: "https://sacruda.nl/",
     description: "projects.sacruda.description",
-    date: "2024-06-27",
+    date: "2020-11-04",
     image: Sacruda,
     longDescription: "projects.sacruda.longDescription",
-    color: "#a675e2",
+    color: "#4db0ff",
     id: "sacruda",
+  },
+  {
+    name: "Masonville",
+    codeUrl: "https://github.com/Masonville-Project",
+    description: "projects.masonville.description",
+    date: "2024-06-27",
+    image: Masonville,
+    longDescription: "projects.masonville.longDescription",
+    color: "#a675e2",
+    id: "masonville",
+    discontinued: true,
   },
   {
     name: "Digital Proof Hackathon",

@@ -8,7 +8,7 @@
       "bottom": "And this place is all about me"
     },
     "arc5y": {
-      "notice": "ArcOS turned 5! Read my story here.",
+      "notice": "Sacruda turned 5! Read my story here.",
       "link": "Read >"
     },
     "footer": "Made with ❤️ by&nbsp;"
@@ -41,11 +41,11 @@
       "name": "Project Gallery",
       "text": "Welcome to my Project Gallery! I've created a lot of projects over the years, more than I can fit on this page, but these are the most notable. Click or tap on the name of a project for more information."
     },
-    "sacruda": {
+    "masonville": {
       "description": "A system to help students keep track of their school assignments."
     },
-    "arcos": {
-      "description": "The super-advanced Svelte Operating System Environment built using web technologies."
+    "sacruda": {
+      "description": "An advanced Web Operating System that runs in your browser, built with reliability and expandability in mind."
     },
     "hackathon-24": {
       "description": "Audience award at the Digital Proof Hackathon"
